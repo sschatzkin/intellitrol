@@ -1,0 +1,14 @@
+// Please note -- this is a representative set of error suppression
+//                options.  Please adjust to suit your own policies
+//                See  manual (chapter LIVING WITH LINT)
+//                for further details.
+-e686
+
++rw(_up_to_brackets)        // activate reserved word
+-dasm=_up_to_brackets       // asm is now ignored _up_to_brackets
+-d__asm__=_up_to_brackets   // __asm is now ignored _up_to_brackets
+
+-header(H:\DPaquette\IntelliTrol\C-020-07\main_lint\lint.h)
++libh(H:\DPaquette\IntelliTrol\C-020-07\main_lint\lint.h)
+-wlib(0)
+-passes(2)

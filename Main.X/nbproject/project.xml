@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>Itrol_Main</name>
+            <creation-uuid>6f1ef7c9-81e3-486a-8113-c6ae37961fc8</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>gld,h</header-extensions>
+            <asminc-extensions>inc</asminc-extensions>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>..\inc</sourceRootElem>
+                <sourceRootElem>..</sourceRootElem>
+                <sourceRootElem>..\gld</sourceRootElem>
+                <sourceRootElem>..\source</sourceRootElem>
+                <sourceRootElem>..\Tools</sourceRootElem>
+                <sourceRootElem>..\h</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>default</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>bypassability</word>
+            <word>bypassable</word>
+            <word>deadman</word>
+            <word>endian</word>
+            <word>Fogbugz</word>
+            <word>Init</word>
+            <word>Intellitrol</word>
+            <word>Intellitrol's</word>
+            <word>jumpstart</word>
+            <word>Langlais</word>
+            <word>ms</word>
+            <word>Paquette</word>
+            <word>Scully</word>
+            <word>whomping</word>
+        </spellchecker-wordlist>
+    </configuration>
+</project>

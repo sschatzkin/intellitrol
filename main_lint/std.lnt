@@ -1,0 +1,81 @@
+//  Microchip MPLAB C30 C, -mL -si2 -spN2 -spF4,
+//  Standard lint options
+//  *** For MPLAB X use the following setup ***
+//  Tools tab: Options: Embedded: PCLint tab
+//  Location	C:\lint\lint-nt.exe
+//  Cmd Options	H:\DPaquette\IntelliTrol\C-020-07\main_lint\std.lnt
+//
+C:\lint\lnt\co-pic30.lnt
+
+"H:\DPaquette\IntelliTrol\C-020-07\main_lint\options.lnt"  -mL -si2 -spN2 -spF4
+-i"H:\DPaquette\IntelliTrol\C-020-07\h"
+//-i"C:\Program Files\Microchip\mplab C30\support\PIC24H\h"
+//-i"C:\Program Files\Microchip\mplab C30\support\generic\h"
+//-i"C:\Program Files\Microchip\mplab C30\include"
+-i"C:\Program Files (x86)\Microchip\xc16\v1.31\support\PIC24H\h"
+-i"C:\Program Files (x86)\Microchip\xc16\v1.31\support\generic\h"
+-i"C:\Program Files (x86)\Microchip\xc16\v1.31\include"
+
+-d__C30__
+-t2			    // tabs are 2 spaces
+-si2			    // int is 2 bytes
+-sp2			    // ptr is 2 bytes (24 bit address requires special handling)
++fbc                        // binary constants having the form 0{bB}{01}+ are permitted
+
+-e701			    // suppress messages about shifting int
+
+-emacro(413,offsetof)  // use of NULL pointer creates a stir 
+-emacro(545,offsetof)  // addressing an array member is OK 
+-esym(714,_FBORPOR)              // Microship Hardware configuration registers
+-esym(714,_FWDT)                 // Microship Hardware configuration registers
+-esym(714,_FOSC)                 // Microship Hardware configuration registers
+-esym(714,_FICD)                 // Microship Hardware configuration registers
+-esym(714,_FOSCSEL)              // Microship Hardware configuration registers
+-esym(714,_OscillatorFail)       // Microship Hardware configuration registers
+-esym(526,__builtin_dmaoffset)   // This is a builtin to Microship compiler.
+-esym(628,__builtin_dmaoffset)   // "                                      "
+-esym(714,_AddressError)         // Interrupt routines
+-esym(714,_StackError)           // Interrupt routines
+-esym(714,_MathError)            // Interrupt routines
+-esym(714,_DMACError)            // Interrupt routines
+-esym(714,_AltOscillatorFail)    // Interrupt routines
+-esym(714,_AltAddressError)      // Interrupt routines
+-esym(714,_AltStackError)        // Interrupt routines
+-esym(714,_AltMathError)         // Interrupt routines
+-esym(714,_AltDMACError)         // Interrupt routines
+-esym(714,_T4Interrupt)          // Interrupt routines
+-esym(714,_DMA0Interrupt)        // Interrupt routines
+-esym(714,_T5Interrupt)          // Interrupt routines
+-esym(714,_ADC1Interrupt)        // Interrupt routines
+-esym(714,_U1RXInterrupt)        // Interrupt routines
+-esym(714,_U2RXInterrupt)        // Interrupt routines
+-esym(714,_T2Interrupt)          // Interrupt routines
+-esym(714,_T3Interrupt)          // Interrupt routines
+-esym(714,write)                 // This is a routine called by the library printf
+-esym(714,_U2TXInterrupt)
+-esym(765,_FBORPOR)              // Microship Hardware configuration registers
+-esym(765,_FWDT)                 // Microship Hardware configuration registers
+-esym(765,_FOSC)                 // Microship Hardware configuration registers
+-esym(765,_FOSCSEL)              // Microship Hardware configuration registers
+-esym(765,_FICD)                 // Microship Hardware configuration registers
+-esym(765,_OscillatorFail)       // Microship Hardware configuration registers
+-esym(765,_AddressError)         // Interrupt routines
+-esym(765,_StackError)           // Interrupt routines
+-esym(765,_MathError)            // Interrupt routines
+-esym(765,_DMACError)            // Interrupt routines
+-esym(765,_AltOscillatorFail)    // Interrupt routines
+-esym(765,_AltAddressError)      // Interrupt routines
+-esym(765,_AltStackError)        // Interrupt routines
+-esym(765,_AltMathError)         // Interrupt routines
+-esym(765,_AltDMACError)         // Interrupt routines
+-esym(765,_T4Interrupt)          // Interrupt routines
+-esym(765,_DMA0Interrupt)        // Interrupt routines
+-esym(765,_T5Interrupt)          // Interrupt routines
+-esym(765,_ADC1Interrupt)        // Interrupt routines
+-esym(765,_U1RXInterrupt)        // Interrupt routines
+-esym(765,_U2RXInterrupt)        // Interrupt routines
+-esym(765,_T2Interrupt)          // Interrupt routines
+-esym(765,_T3Interrupt)          // Interrupt routines
+-esym(765,write)                 // This is a routine called by the library printf
+-esym(765,_U2TXInterrupt)
+
