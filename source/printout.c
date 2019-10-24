@@ -222,8 +222,7 @@ static int majver, minver, edtver;
            {
              printf(" PIC CPU");
            }
-           printf(" Rack Controller Rev %X.%d.%d  %s, Updater Rev %X.%d.%d\n\r",
-                  MAJVER, MINVER, EDTVER, b_date, (majver), (minver), (edtver));
+           printf(" Rack Controller Rev %d.%d.%d  %s\n\r", MAJVER, MINVER, EDTVER, b_date);
            printf("*  Copyright 2010, 2014 Scully Signal Company. Scully is a registered\n\r");
            printf("*  trademark of Scully Signal Company. All Rights Reserved\n\r");
            printf("*  Specifications are subject to change without notice.\n\r");

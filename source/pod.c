@@ -435,7 +435,7 @@ void show_revision(void)
     ledstate[VIP_IDLE] = DARK;
     service_wait(SW_SLOW);              /* Give BigRed half-a-second */
  
-    ver_num = EDTVERDEC;
+    ver_num = EDTVER;
     for(i = 8; i >= 1; i--)
     {
         if((ver_num & 0x01) == 1 )
