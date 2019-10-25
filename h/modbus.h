@@ -58,6 +58,7 @@
 #define REMOVE_VEHICLE              0x5A
 #define READ_NUM_PROBES             0x5B
 #define USE_UPDATED_ADC_TABLE       0x5C
+#define GET_CURRENT_ADC_TABLE       0x5D
 
 
 /*

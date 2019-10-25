@@ -3736,6 +3736,16 @@ unsigned char data;                  /* Local data byte */
               }
             break;
             
+          case GET_CURRENT_ADC_TABLE:       /* 0x5D -- Return value of selected ADC table for probe counting, 1 = new table, 0 = old table */
+              if(pSysDia5->updatedADCTable == 1) {
+                  sts = mbcPutByte (0x01);  // Return 01
+              }
+              
+              else {
+                  sts = mbcPutByte (0x00);  // Return 00
+              }
+            break;
+            
           default:                      /* Unknown, Illegal, etc. */
             sts = MB_EXC_ILL_FUNC;
             break;

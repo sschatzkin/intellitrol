@@ -192,11 +192,10 @@
 /* Shell version identification */
 
 #define MAJVER      01
-#define MINVER      06
-#define EDTVER      38
-#define EDTVERHEX   0x38
+#define MINVER      07
+#define EDTVER      00
 
-#define SHELLVER (((unsigned int)MAJVER << 12) | ((unsigned int)MINVER << 8) | (unsigned int)EDTVERHEX)
+#define SHELLVER (((unsigned int)MAJVER << 12) | ((unsigned int)MINVER << 8) | (unsigned int)EDTVER)
 
 #define HWD_MAJVER  0x1
 #define HWD_MINVER  0x5

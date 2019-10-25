@@ -58,8 +58,8 @@
  *************************************************************************/
 static char boot_mem_test (void)
 {
-  printf("\n\r    Powerup Memory Tests Passed\n\r");
-  return FALSE;
+    printf("\n\r    Powerup Memory Tests Passed\n\r");
+    return FALSE;
 }
 
 /*********************************************************************
@@ -72,48 +72,46 @@ static char boot_mem_test (void)
  ********************************************************************/
 char diag_clock (void)
 {
-char i;
-char clk;
-char sts;
+    char i;
+    char clk;
+    char sts;
 
     for (i = 5; i > 0; i--)             /* Up to 5 tries to read TOD clock */
     {
-      clk = Read_Clock();             /* Read Dallas Time-Of-Day */
-      if (clk == CLOCK_OK)            /* If successfully read, */
-      {
-        sts = FALSE;                    /* Note complete success */
-        break;                      /* And get outta here */
-      }
-      else
-      {
-        if ((clock_status != CLOCK_DEFAULT)
-             && (clock_status != CLOCK_STOPPED))
+        clk = Read_Clock();             /* Read Dallas Time-Of-Day */
+        if (clk == CLOCK_OK)            /* If successfully read, */
         {
-          sts = TRUE;                  /* Problems reading time */
+            sts = FALSE;                    /* Note complete success */
+            break;                      /* And get outta here */
         }
         else
         {
-          sts = 0;
+            if ((clock_status != CLOCK_DEFAULT)
+                && (clock_status != CLOCK_STOPPED))
+            {
+                sts = TRUE;                  /* Problems reading time */
+            }
+            else
+            {
+            sts = 0;
+            }
+            DelayMS (5);                 /* Try again in a few ms */
         }
-        DelayMS (5);                 /* Try again in a few ms */
-      }
     }
-
+    
     if ( sts == TRUE)
     {
-      present_time = JAN_01_2009;     /*   Set default date */
+        present_time = JAN_01_2009;     /*   Set default date */
 
-      sts = Write_Clock ();           /* Update Dallas TOD clock chip */
-      if (sts != CLOCK_OK)            /* Any problems? */
-      {                               /* Yes... */
-        sts = TRUE;                   /* Generic "register error" code */
-      }
+        sts = Write_Clock ();           /* Update Dallas TOD clock chip */
+        if (sts != CLOCK_OK)            /* Any problems? */
+        {                               /* Yes... */
+            sts = TRUE;                   /* Generic "register error" code */
+        }
 
-        /* Should we do a Read_Clock() here??? */
-
-      UNIX_to_Greg();                /* Update to new year/month/etc. */
+        UNIX_to_Greg();                /* Update to new year/month/etc. */
     }
-
+    
     xprintf( 122, DUMMY );   /* use the xprintf function to report Dallas status */
 
     return (sts);
@@ -138,8 +136,8 @@ char sts;
 
 char flash_panel (void)
 {
-char two_pass;
-int i;
+    char two_pass;
+    int i;
 
     set_nonpermit(DARK);
     ledstate[OPTIC_OUT]  = DARK;
@@ -154,19 +152,19 @@ int i;
     ledstate[VIP_UNAUTH] = DARK;
     ledstate[VIP_IDLE] = DARK;
     ledstate[GND_GOOD] = DARK;
-    set_new_led(FREELED26, DARK);     /* Green ground diode off */
+    set_new_led(FREELED26, DARK);       /* Green ground diode off */
     ledstate[DYNACHEK] = DARK;
-    service_wait(SW_SLOW);              /* Give BigRed half-a-second */
+    service_wait(SW_SLOW);              /* Wait half-a-second */
     set_nonpermit(LITE);
-    service_wait(SW_SLOW);              /* Give BigRed half-a-second */
+    service_wait(SW_SLOW);              /* Wait half-a-second */
     set_nonpermit(DARK);
     set_permit(LITE);
     if ( new_front_panel == TRUE)
     {
-      service_wait(SW_SLOW*4);            /* Similarly, BigGreen gets 2 seconds */
+      service_wait(SW_SLOW * 4);        /* Similarly, BigGreen gets 2 seconds */
     } else
     {
-      service_wait(SW_SLOW);              /* Similarly, BigGreen gets .5 seconds */
+      service_wait(SW_SLOW);            /* Similarly, BigGreen gets .5 seconds */
     }
     set_permit(DARK);
 
@@ -347,9 +345,6 @@ int i;
 
 void show_revision(void)
 {
-    unsigned char ver_num;
-    int i;
-    
     set_nonpermit(DARK);
     ledstate[COMPARTMENT_1] = DARK;
     ledstate[COMPARTMENT_2] = DARK;
@@ -373,25 +368,11 @@ void show_revision(void)
     ledstate[GND_GOOD] = DARK;
     set_new_led(FREELED26, DARK);     /* Green ground diode off */
     ledstate[DYNACHEK] = DARK;
-    service_wait(8);              /* Give BigRed half-a-second */
+    service_wait(8);              /* Wait half-a-second */
     
-//    ledstate[COMPARTMENT_8] = LITE;
-    ver_num = MAJVER;
-    for( i = 8; i >= 1; i--)
-    {
-        if( (ver_num & 0x01) == 1 )
-        {
-            ledstate[i] = LITE;
-        }
-        else
-        {
-            ledstate[i] = DARK;            
-        }
-        ver_num = ver_num >> 1;
-    }
-    
+    ledstate[MAJVER] = LITE;
     ledstate[VIP_AUTH] = LITE;
-    service_wait(16);              /* Give BigRed half-a-second */
+    service_wait(16);              /* Wait a second */
     
     ledstate[COMPARTMENT_1] = DARK;
     ledstate[COMPARTMENT_2] = DARK;
@@ -404,23 +385,11 @@ void show_revision(void)
     ledstate[VIP_AUTH] = DARK;
     ledstate[VIP_UNAUTH] = DARK;
     ledstate[VIP_IDLE] = DARK;
-    service_wait(SW_SLOW);              /* Give BigRed half-a-second */
+    service_wait(8);              /* Wait half-a-second */
     
-    ver_num = MINVER;
-    for( i = 8; i >= 1; i--)
-    {
-        if( (ver_num & 0x01) == 1 )
-        {
-            ledstate[i] = LITE;
-        }
-        else
-        {
-            ledstate[i] = DARK;            
-        }
-        ver_num = ver_num >> 1;
-    }
+    ledstate[MINVER] = LITE;
     ledstate[VIP_UNAUTH] = LITE;
-    service_wait(16);              /* Give BigRed half-a-second */
+    service_wait(16);                   /* Wait half-a-second */
  
     ledstate[COMPARTMENT_1] = DARK;
     ledstate[COMPARTMENT_2] = DARK;
@@ -433,23 +402,11 @@ void show_revision(void)
     ledstate[VIP_AUTH] = DARK;
     ledstate[VIP_UNAUTH] = DARK;
     ledstate[VIP_IDLE] = DARK;
-    service_wait(SW_SLOW);              /* Give BigRed half-a-second */
- 
-    ver_num = EDTVER;
-    for(i = 8; i >= 1; i--)
-    {
-        if((ver_num & 0x01) == 1 )
-        {
-            ledstate[i] = LITE;
-        }
-        else
-        {
-            ledstate[i] = DARK;            
-        }
-        ver_num = ver_num >> 1;
-    }
+    service_wait(8);              /* Wait half-a-second */
+    
+    ledstate[EDTVER] = LITE;
     ledstate[VIP_IDLE] = LITE;
-    service_wait(16);              /* Give BigRed half-a-second */
+    service_wait(16);                   /* Wait half-a-second */
     
     ledstate[COMPARTMENT_1] = DARK;
     ledstate[COMPARTMENT_2] = DARK;
@@ -462,7 +419,7 @@ void show_revision(void)
     ledstate[VIP_AUTH] = DARK;
     ledstate[VIP_UNAUTH] = DARK;
     ledstate[VIP_IDLE] = DARK;
-    service_wait(8);              /* Give BigRed half-a-second */
+    service_wait(8);              /* Wait half-a-second */
    
     // repeat the end stuff from flash_panel as we are now the last in the pool
     set_nonpermit(LITE);
@@ -484,10 +441,6 @@ void show_revision(void)
     {
       set_new_led(DEADMAN_GOOD, LITE);    /* Green Deadman diode on */
     }
-
-   
-    
-    
 }
 
 
