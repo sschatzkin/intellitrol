@@ -194,19 +194,19 @@ section                    address   length (PC units)   length (bytes) (dec)
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
 .bss                         0x800                   0           0x946  (2374)
-_0453A2A0_at_address_00003F02    0x3f02                   0             0x2  (2)
+_04D532A0_at_address_00003F02    0x3f02                   0             0x2  (2)
 .data                       0x3f04                   0            0x52  (82)
 .bss                        0x3f56                   0            0x60  (96)
 .data                       0x3fb6                   0            0x26  (38)
 .bss                        0x3fdc                   0            0x12  (18)
 .bss                        0x3fee                   0             0x2  (2)
-_0455E480_at_address_00003FF0    0x3ff0                   0             0x2  (2)
+_04D2D480_at_address_00003FF0    0x3ff0                   0             0x2  (2)
 .bss                        0x3ff2                   0             0x6  (6)
-_0455E600_at_address_00003FF8    0x3ff8                   0             0x2  (2)
-_0455E540_at_address_00003FFA    0x3ffa                   0             0x2  (2)
-_0455E5A0_at_address_00003FFC    0x3ffc                   0             0x2  (2)
-_0455E4E0_at_address_00003FFE    0x3ffe                   0             0x2  (2)
-_04E0D6C05db3418a           0x4000                   0            0x10  (16)
+_04D2D600_at_address_00003FF8    0x3ff8                   0             0x2  (2)
+_04D2D540_at_address_00003FFA    0x3ffa                   0             0x2  (2)
+_04D2D5A0_at_address_00003FFC    0x3ffc                   0             0x2  (2)
+_04D2D4E0_at_address_00003FFE    0x3ffe                   0             0x2  (2)
+_0455E6C05db35463           0x4000                   0            0x10  (16)
 .data                       0x4010                   0            0x1e  (30)
 .bss                        0x402e                   0            0x16  (22)
 .bss                        0x4044                   0            0x64  (100)
@@ -1579,7 +1579,7 @@ __FSS
 
 __FGS             0xf80004          0x2
  *(__FGS.sec*)
- __FGS.sec        0xf80004          0x2 /CW/_FGSà)’¿)’__FGS.sec
+ __FGS.sec        0xf80004          0x2 /CW/_FGSê9ø»9ø__FGS.sec
                   0xf80004                  __FGS.sec
 
 __FOSCSEL         0xf80006          0x2
@@ -1616,61 +1616,61 @@ __FUID3
 .comment
  *(.comment)
 
-.debug_info       0x000000      0x2e2d5
+.debug_info       0x000000      0x2e2a2
  *(.debug_info)
- .debug_info      0x000000        0xb13 build/default/production/_ext/812168374/write.o
- .debug_info      0x000b13       0x1513 build/default/production/_ext/812168374/adc.o
- .debug_info      0x002026       0x14bc build/default/production/_ext/812168374/com_two.o
- .debug_info      0x0034e2       0x2568 build/default/production/_ext/812168374/comdat.o
- .debug_info      0x005a4a       0x15f5 build/default/production/_ext/812168374/dallas.o
- .debug_info      0x00703f        0x1dd build/default/production/_ext/812168374/delay.o
- .debug_info      0x00721c       0x150b build/default/production/_ext/812168374/dfile.o
- .debug_info      0x008727       0x11aa build/default/production/_ext/812168374/dumfile.o
- .debug_info      0x0098d1       0x1003 build/default/production/_ext/812168374/eeprom.o
- .debug_info      0x00a8d4        0xc68 build/default/production/_ext/812168374/esquared.o
- .debug_info      0x00b53c        0xf1d build/default/production/_ext/812168374/grndchck.o
- .debug_info      0x00c459         0x9e build/default/production/_ext/812168374/CPURegisterTest.o
- .debug_info      0x00c4f7        0x16c build/default/production/_ext/812168374/PcTest.o
- .debug_info      0x00c663        0x8ba build/default/production/_ext/812168374/i2c_1.o
- .debug_info      0x00cf1d        0x8e0 build/default/production/_ext/812168374/i2c_2.o
- .debug_info      0x00d7fd        0xa48 build/default/production/_ext/812168374/init_ADC.o
- .debug_info      0x00e245        0xa0d build/default/production/_ext/812168374/init_DMA.o
- .debug_info      0x00ec52        0xbf3 build/default/production/_ext/812168374/init_ports.o
- .debug_info      0x00f845       0x1dcd build/default/production/_ext/812168374/init_timer.o
- .debug_info      0x011612        0x31e build/default/production/_ext/812168374/isr_ADC.o
- .debug_info      0x011930        0x633 build/default/production/_ext/812168374/isr_DMA.o
- .debug_info      0x011f63        0x5a3 build/default/production/_ext/812168374/isr_timer.o
- .debug_info      0x012506        0xcd9 build/default/production/_ext/812168374/jumpers.o
- .debug_info      0x0131df       0x157f build/default/production/_ext/812168374/modbus.o
- .debug_info      0x01475e       0x1c59 build/default/production/_ext/812168374/modcmd.o
- .debug_info      0x0163b7        0x9cd build/default/production/_ext/812168374/modfrc.o
- .debug_info      0x016d84       0x15a9 build/default/production/_ext/812168374/modreg.o
- .debug_info      0x01832d       0x17e1 build/default/production/_ext/812168374/nvsystem.o
- .debug_info      0x019b0e        0xec2 build/default/production/_ext/812168374/nvtruck.o
- .debug_info      0x01a9d0        0x5c0 build/default/production/_ext/812168374/optic2.o
- .debug_info      0x01af90       0x1381 build/default/production/_ext/812168374/optic5.o
- .debug_info      0x01c311       0x120c build/default/production/_ext/812168374/permit.o
- .debug_info      0x01d51d       0x1d59 build/default/production/_ext/812168374/pod.o
- .debug_info      0x01f276        0xd6d build/default/production/_ext/812168374/printout.o
- .debug_info      0x01ffe3        0xcc5 build/default/production/_ext/812168374/shorts.o
- .debug_info      0x020ca8       0x173f build/default/production/_ext/812168374/sim.o
- .debug_info      0x0223e7        0x8c2 build/default/production/_ext/812168374/specops.o
- .debug_info      0x022ca9        0x48d build/default/production/_ext/812168374/thermist.o
- .debug_info      0x023136        0x49f build/default/production/_ext/812168374/traps.o
- .debug_info      0x0235d5       0x235e build/default/production/_ext/812168374/trukstat.o
- .debug_info      0x025933         0xe1 build/default/production/_ext/2133044052/build_date.o
- .debug_info      0x025a14       0x16b7 build/default/production/_ext/812168374/tim_utl.o
- .debug_info      0x0270cb        0x713 build/default/production/_ext/812168374/spi_mpol.o
- .debug_info      0x0277de        0x813 build/default/production/_ext/812168374/spi_eeprom.o
- .debug_info      0x027ff1         0x95 build/default/production/_ext/812168374/memory.o
- .debug_info      0x028086       0x1a40 build/default/production/_ext/812168374/uart.o
- .debug_info      0x029ac6       0x1134 build/default/production/_ext/812168374/isr_uart.o
- .debug_info      0x02abfa        0x5fc build/default/production/_ext/812168374/march_tst.o
- .debug_info      0x02b1f6         0x9c build/default/production/_ext/812168374/crt0_standard.o
- .debug_info      0x02b292         0x9a build/default/production/_ext/812168374/memory_test.o
- .debug_info      0x02b32c        0x168 build/default/production/_ext/812168374/test_function.o
- .debug_info      0x02b494       0x2578 build/default/production/_ext/812168374/main.o
- .debug_info      0x02da0c        0x8c9 build/default/production/_ext/812168374/deadman.o
+ .debug_info      0x000000        0xb12 build/default/production/_ext/812168374/write.o
+ .debug_info      0x000b12       0x1512 build/default/production/_ext/812168374/adc.o
+ .debug_info      0x002024       0x14bb build/default/production/_ext/812168374/com_two.o
+ .debug_info      0x0034df       0x2567 build/default/production/_ext/812168374/comdat.o
+ .debug_info      0x005a46       0x15f4 build/default/production/_ext/812168374/dallas.o
+ .debug_info      0x00703a        0x1dc build/default/production/_ext/812168374/delay.o
+ .debug_info      0x007216       0x150a build/default/production/_ext/812168374/dfile.o
+ .debug_info      0x008720       0x11a9 build/default/production/_ext/812168374/dumfile.o
+ .debug_info      0x0098c9       0x1002 build/default/production/_ext/812168374/eeprom.o
+ .debug_info      0x00a8cb        0xc67 build/default/production/_ext/812168374/esquared.o
+ .debug_info      0x00b532        0xf1c build/default/production/_ext/812168374/grndchck.o
+ .debug_info      0x00c44e         0x9d build/default/production/_ext/812168374/CPURegisterTest.o
+ .debug_info      0x00c4eb        0x16b build/default/production/_ext/812168374/PcTest.o
+ .debug_info      0x00c656        0x8b9 build/default/production/_ext/812168374/i2c_1.o
+ .debug_info      0x00cf0f        0x8df build/default/production/_ext/812168374/i2c_2.o
+ .debug_info      0x00d7ee        0xa47 build/default/production/_ext/812168374/init_ADC.o
+ .debug_info      0x00e235        0xa0c build/default/production/_ext/812168374/init_DMA.o
+ .debug_info      0x00ec41        0xbf2 build/default/production/_ext/812168374/init_ports.o
+ .debug_info      0x00f833       0x1dcc build/default/production/_ext/812168374/init_timer.o
+ .debug_info      0x0115ff        0x31d build/default/production/_ext/812168374/isr_ADC.o
+ .debug_info      0x01191c        0x632 build/default/production/_ext/812168374/isr_DMA.o
+ .debug_info      0x011f4e        0x5a2 build/default/production/_ext/812168374/isr_timer.o
+ .debug_info      0x0124f0        0xcd8 build/default/production/_ext/812168374/jumpers.o
+ .debug_info      0x0131c8       0x157e build/default/production/_ext/812168374/modbus.o
+ .debug_info      0x014746       0x1c58 build/default/production/_ext/812168374/modcmd.o
+ .debug_info      0x01639e        0x9cc build/default/production/_ext/812168374/modfrc.o
+ .debug_info      0x016d6a       0x15a8 build/default/production/_ext/812168374/modreg.o
+ .debug_info      0x018312       0x17e0 build/default/production/_ext/812168374/nvsystem.o
+ .debug_info      0x019af2        0xec1 build/default/production/_ext/812168374/nvtruck.o
+ .debug_info      0x01a9b3        0x5bf build/default/production/_ext/812168374/optic2.o
+ .debug_info      0x01af72       0x1380 build/default/production/_ext/812168374/optic5.o
+ .debug_info      0x01c2f2       0x120b build/default/production/_ext/812168374/permit.o
+ .debug_info      0x01d4fd       0x1d59 build/default/production/_ext/812168374/pod.o
+ .debug_info      0x01f256        0xd6c build/default/production/_ext/812168374/printout.o
+ .debug_info      0x01ffc2        0xcc4 build/default/production/_ext/812168374/shorts.o
+ .debug_info      0x020c86       0x173e build/default/production/_ext/812168374/sim.o
+ .debug_info      0x0223c4        0x8c1 build/default/production/_ext/812168374/specops.o
+ .debug_info      0x022c85        0x48c build/default/production/_ext/812168374/thermist.o
+ .debug_info      0x023111        0x49e build/default/production/_ext/812168374/traps.o
+ .debug_info      0x0235af       0x235d build/default/production/_ext/812168374/trukstat.o
+ .debug_info      0x02590c         0xe1 build/default/production/_ext/2133044052/build_date.o
+ .debug_info      0x0259ed       0x16b6 build/default/production/_ext/812168374/tim_utl.o
+ .debug_info      0x0270a3        0x712 build/default/production/_ext/812168374/spi_mpol.o
+ .debug_info      0x0277b5        0x812 build/default/production/_ext/812168374/spi_eeprom.o
+ .debug_info      0x027fc7         0x94 build/default/production/_ext/812168374/memory.o
+ .debug_info      0x02805b       0x1a3f build/default/production/_ext/812168374/uart.o
+ .debug_info      0x029a9a       0x1133 build/default/production/_ext/812168374/isr_uart.o
+ .debug_info      0x02abcd        0x5fb build/default/production/_ext/812168374/march_tst.o
+ .debug_info      0x02b1c8         0x9b build/default/production/_ext/812168374/crt0_standard.o
+ .debug_info      0x02b263         0x99 build/default/production/_ext/812168374/memory_test.o
+ .debug_info      0x02b2fc        0x167 build/default/production/_ext/812168374/test_function.o
+ .debug_info      0x02b463       0x2577 build/default/production/_ext/812168374/main.o
+ .debug_info      0x02d9da        0x8c8 build/default/production/_ext/812168374/deadman.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000       0x4352
@@ -3087,7 +3087,7 @@ LOAD c:/program files (x86)/microchip/xc16/v1.41/bin/bin/../../lib\libm-elf.a
 LOAD c:/program files (x86)/microchip/xc16/v1.41/bin/bin/../../lib\libc-elf.a
 END GROUP
 OUTPUT(dist/default/production/Main.X.production.elf elf32-pic30)
-LOAD /CW/_FGSà)’¿)’__FGS.sec
+LOAD /CW/_FGSê9ø»9ø__FGS.sec
 LOAD jump_table
 LOAD default_isr
 LOAD heap
@@ -3331,44 +3331,44 @@ __c30_signature
  __c30_signature
                   0x00268e          0x6 c:/program files (x86)/microchip/xc16/v1.41/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
 
-_0455E480_at_address_00003FF0
+_04D2D480_at_address_00003FF0
                     0x3ff0          0x2
- _0455E480_at_address_00003FF0
+ _04D2D480_at_address_00003FF0
                     0x3ff0          0x2 build/default/production/_ext/812168374/comdat.o
                     0x3ff0                  _error_flag
 
-_0455E600_at_address_00003FF8
+_04D2D600_at_address_00003FF8
                     0x3ff8          0x2
- _0455E600_at_address_00003FF8
+ _04D2D600_at_address_00003FF8
                     0x3ff8          0x2 build/default/production/_ext/812168374/comdat.o
                     0x3ff8                  _error_address
 
-_0455E540_at_address_00003FFA
+_04D2D540_at_address_00003FFA
                     0x3ffa          0x2
- _0455E540_at_address_00003FFA
+ _04D2D540_at_address_00003FFA
                     0x3ffa          0x2 build/default/production/_ext/812168374/comdat.o
                     0x3ffa                  _error_good_data
 
-_0455E5A0_at_address_00003FFC
+_04D2D5A0_at_address_00003FFC
                     0x3ffc          0x2
- _0455E5A0_at_address_00003FFC
+ _04D2D5A0_at_address_00003FFC
                     0x3ffc          0x2 build/default/production/_ext/812168374/comdat.o
                     0x3ffc                  _error_bad_data
 
-_0455E4E0_at_address_00003FFE
+_04D2D4E0_at_address_00003FFE
                     0x3ffe          0x2
- _0455E4E0_at_address_00003FFE
+ _04D2D4E0_at_address_00003FFE
                     0x3ffe          0x2 build/default/production/_ext/812168374/comdat.o
                     0x3ffe                  _updater_rev
 
-_0453A2A0_at_address_00003F02
+_04D532A0_at_address_00003F02
                     0x3f02          0x2
- _0453A2A0_at_address_00003F02
+ _04D532A0_at_address_00003F02
                     0x3f02          0x2 build/default/production/_ext/812168374/main.o
 
-_04E0D6C05db3418a
+_0455E6C05db35463
                     0x4000         0x10
- _04E0D6C05db3418a
+ _0455E6C05db35463
                     0x4000         0x10 build/default/production/_ext/812168374/init_DMA.o
                     0x4000                  _BufferA
 

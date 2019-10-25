@@ -359,20 +359,20 @@ void show_revision(void)
     ledstate[TASCOMM]    = DARK;
     ledstate[TRUCKCOMM]  = DARK;
     ledstate[GND_BAD] = DARK;
-    set_new_led(GROUND_GOOD, DARK);    /* Green ground diode off */
+    set_new_led(GROUND_GOOD, DARK);     /* Green ground diode off */
     set_new_led(DEADMAN_BAD, DARK);
     set_new_led(DEADMAN_GOOD, DARK);
     ledstate[VIP_AUTH] = DARK;
     ledstate[VIP_UNAUTH] = DARK;
     ledstate[VIP_IDLE] = DARK;
     ledstate[GND_GOOD] = DARK;
-    set_new_led(FREELED26, DARK);     /* Green ground diode off */
+    set_new_led(FREELED26, DARK);       /* Green ground diode off */
     ledstate[DYNACHEK] = DARK;
-    service_wait(8);              /* Wait half-a-second */
+    service_wait(8);                    /* Wait half-a-second */
     
     ledstate[MAJVER] = LITE;
     ledstate[VIP_AUTH] = LITE;
-    service_wait(16);              /* Wait a second */
+    service_wait(16);                   /* Wait a second */
     
     ledstate[COMPARTMENT_1] = DARK;
     ledstate[COMPARTMENT_2] = DARK;
@@ -385,11 +385,11 @@ void show_revision(void)
     ledstate[VIP_AUTH] = DARK;
     ledstate[VIP_UNAUTH] = DARK;
     ledstate[VIP_IDLE] = DARK;
-    service_wait(8);              /* Wait half-a-second */
+    service_wait(8);                    /* Wait half-a-second */
     
     ledstate[MINVER] = LITE;
     ledstate[VIP_UNAUTH] = LITE;
-    service_wait(16);                   /* Wait half-a-second */
+    service_wait(16);                   /* Wait a second */
  
     ledstate[COMPARTMENT_1] = DARK;
     ledstate[COMPARTMENT_2] = DARK;
@@ -402,11 +402,11 @@ void show_revision(void)
     ledstate[VIP_AUTH] = DARK;
     ledstate[VIP_UNAUTH] = DARK;
     ledstate[VIP_IDLE] = DARK;
-    service_wait(8);              /* Wait half-a-second */
+    service_wait(8);                    /* Wait half-a-second */
     
     ledstate[EDTVER] = LITE;
     ledstate[VIP_IDLE] = LITE;
-    service_wait(16);                   /* Wait half-a-second */
+    service_wait(16);                   /* Wait a second */
     
     ledstate[COMPARTMENT_1] = DARK;
     ledstate[COMPARTMENT_2] = DARK;
