@@ -352,28 +352,23 @@ void optic_5_setup( void )
       service_charge();                 /* Appease watchdog */
     }
   }
-  if ( probe_flag == TRUE)         /* Return pulse seen; dry vehicle */
+  if (probe_flag == TRUE)         /* Return pulse seen; dry vehicle */
   {
-   if (number_of_Probes == 0)
-    {
-      number_of_Probes = 1;        /* Might be a IntelliCheck*/
-    }
-    else
-    {
-       if (number_of_Probes > 16)
-       {
-         number_of_Probes = 0x55;  /* Set as an invalid compartment count */
-       }
-    }
-    display_probe();
-    dry_5W_probes();
-   } else
-   {
+      if (number_of_Probes < 1 || number_of_Probes > 16)
+      {
+          number_of_Probes = 1;        /* Might be a IntelliCheck or no diag line */
+      }
+      
+      display_probe();
+      dry_5W_probes();
+  }
+  else
+  {
     /***************************** 7/22/2011 8:16AM **************************
      * Probes are wet
      *************************************************************************/
-     number_of_Probes = (unsigned int)(calc_tank());
-   }
+      number_of_Probes = (unsigned int)(calc_tank());
+  }
   
   lowVolt = 9999;
 } /* end of optic_5_setup */

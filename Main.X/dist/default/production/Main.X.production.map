@@ -180,13 +180,13 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                       0x2000              0x15ec          0x20e2  (8418)
 .const                      0x35ec              0x3418          0x4e24  (20004)
-.text                       0x6a04             0x14862         0x1ec93  (126099)
-.dinit                     0x1b266               0x118           0x1a4  (420)
-.text                      0x1b37e               0x3c0           0x5a0  (1440)
-.SslTestSection1           0x1b73e                 0xa             0xf  (15)
-.SslTestSection2           0x1b748                 0xa             0xf  (15)
+.text                       0x6a04             0x1485c         0x1ec8a  (126090)
+.dinit                     0x1b260               0x118           0x1a4  (420)
+.text                      0x1b378               0x3c0           0x5a0  (1440)
+.SslTestSection1           0x1b738                 0xa             0xf  (15)
+.SslTestSection2           0x1b742                 0xa             0xf  (15)
 
-                 Total "program" memory used (bytes):        0x262fb  (156411) 59%
+                 Total "program" memory used (bytes):        0x262f2  (156402) 59%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x4000]
@@ -805,202 +805,202 @@ External Symbols in Program Memory (by address):
                   0x012f70                  _five_wire_optic
                   0x013008                  _active_5wire
                   0x013120                  _optic_5_setup
-                  0x0131ea                  _optic_5_pulse
-                  0x0132d0                  _check_echo
-                  0x01341a                  _check_diag
-                  0x0134d0                  _check_5wire_fault
-                  0x01370e                  _calc_tank
-                  0x01397c                  _scully_probe
-                  0x013a4e                  _toggle_led
-                  0x013dc6                  _check_bk
-                  0x014128                  _logcrcerr
-                  0x014164                  _logEEPROM
-                  0x0141de                  _loginit
-                  0x014262                  _logrelayerr
-                  0x014386                  _logvolterr
-                  0x014486                  _logmaintenanceerr
-                  0x0144a0                  _log_dome_out
-                  0x014580                  _nvSysFormat
-                  0x01460c                  _nvSysInit
-                  0x014878                  _nvSysDia5Update
-                  0x0148b0                  _nvSysVoltUpdate
-                  0x0148e2                  _nvSysParmUpdate
-                  0x014922                  _nvSysSet1Update
-                  0x014970                  _nvSysParmDefaults
-                  0x0149e2                  _nvSysDSUpdate
-                  0x014a32                  _nvSysWrBlock
-                  0x014ae2                  _nvLogInit
-                  0x014bb4                  _nvLogErase
-                  0x014bf4                  _nvLogGet
-                  0x014c3a                  _nvLogPut
-                  0x014cf0                  _nvLogMerge
-                  0x014dd4                  _nvLogRepeat
-                  0x014f16                  _eeMapPartition
-                  0x01503a                  _eeReadBlock
-                  0x0150a0                  _eeWriteByte
-                  0x0150bc                  _eeWriteBlock
-                  0x015124                  _eeInit
-                  0x015222                  _eeHomePtr
-                  0x015252                  _eeReport
-                  0x01530e                  _eeUpdateHome
-                  0x015750                  _eeUpdateSys
-                  0x0157a4                  _eeFormat
-                  0x0157da                  _main_charge
-                  0x015822                  _init_permit_relay
-                  0x015854                  _permit_relay
-                  0x015a82                  _permit_bypass
-                  0x015c84                  _clr_bypass
-                  0x015cba                  _set_bypass
-                  0x015d36                  _reset_bypass
-                  0x015dc2                  _main_relay_state
-                  0x015eec                  _bak_relay_state
-                  0x015ffa                  _init_led
-                  0x016018                  _timer_heartbeat
-                  0x0161d4                  _set_mux
-                  0x016226                  _fetch_mux
-                  0x016254                  _set_porte
-                  0x0162c8                  _read_relays
-                  0x01636c                  _set_permit
-                  0x016378                  _set_nonpermit
-                  0x0163b4                  _long_swap
-                  0x016430                  _int_swap
-                  0x016442                  _display_probe
-                  0x016598                  _EnaFeatures
-                  0x016714                  _dummy_func
-                  0x016730                  _set_new_led
-                  0x01674e                  _set_compartment_led
-                  0x01677e                  _init_variables
-                  0x016878                  _report_tank_state
-                  0x016dd6                  _dry_probes
-                  0x016e1a                  _dry_5W_probes
-                  0x016e6a                  _unknown_probes
-                  0x016ec2                  _probe_leds_off
-                  0x016fea                  _dfOpenFile
-                  0x01714c                  _dfGetByte
-                  0x0171ee                  _dfCloseFile
-                  0x017204                  _dsOpenFile
-                  0x017238                  _dsCloseFile
-                  0x017240                  _dsGetByte
-                  0x017304                  _dsGetDecn
-                  0x01735e                  _dsTruckValidate
-                  0x017490                  _is_truck_pulsing
-                  0x017628                  _EEPROM_read
-                  0x017704                  _EEPROM_write
-                  0x0177ec                  _eeBlockWrite
-                  0x0178cc                  _eeBlockRead
-                  0x0179ac                  _EEPROM_fill
-                  0x017a86                  _eeBlockFill
-                  0x017b5a                  _eeCRC
-                  0x017cdc                  _StaticShortTest
-                  0x0181b8                  _AllShortTest
-                  0x01838a                  _get_modbus_addr
-                  0x0183e4                  _get_modbus_baud
-                  0x018410                  _get_modbus_parity
-                  0x018446                  _get_modbus_csize
-                  0x018480                  _modbus_init
-                  0x0184e4                  _modbus_execloop_process
-                  0x0187de                  _modbus_CRC
-                  0x01883a                  _program_memory_CRC
-                  0x0188ac                  _SpcLEDBlink
-                  0x01897a                  _SpcLEDOff
-                  0x0189a2                  _SpecialOps
-                  0x018d92                  _mbfClrEnaFeatures
-                  0x018de8                  _mbfSetEnaFeatures
-                  0x018f0e                  _mbxForce
-                  0x01924c                  _read_probes
-                  0x0192b6                  _setup_probes
-                  0x0192c6                  _wait_for_probes
-                  0x0192fa                  _convert_to_binary
-                  0x0194ec                  _ops_ADC
-                  0x019514                  _read_ADC
-                  0x0195da                  _read_muxADC
-                  0x0196fc                  _SPI_EEPROMInit
-                  0x01970c                  _SPI_EEPROMWriteByte
-                  0x0197b6                  _SPI_EEPROMReadByte
-                  0x019850                  _SPI_EEPROMPageWriteByte
-                  0x019918                  _SPIPageWrite
-                  0x0199e4                  _SPI_EEPROMWriteEnable
-                  0x019a00                  _SPI_EEPROMReadStatus
-                  0x019a3c                  _spi_erase
-                  0x019a88                  _SPI_EEPROMReadDeviceID
-                  0x019b18                  _spi_erase_sector
-                  0x019ba2                  _init_I_O_Expander
-                  0x019ca8                  _test_jumpers
-                  0x019e22                  _fetch_jumpers
-                  0x019eaa                  _read_jumpers
-                  0x01a002                  _volts_jumper
-                  0x01a036                  _CheckGroundPresent
-                  0x01a3a6                  _set_gcheck
-                  0x01a3b4                  _clear_gcheck
-                  0x01a3c2                  _test_gnd_idle
-                  0x01a3ea                  _set_ground_reference
-                  0x01a426                  _deadman_init
-                  0x01a4ae                  _deadman_ops
-                  0x01a688                  _march_test
-                  0x01a82c                  _mem_test
-                  0x01a8e6                  _MastergetsI2C2
-                  0x01a98c                  _OpenI2C2
-                  0x01a99e                  _I2C2_reset
-                  0x01a9fe                  _I2C2_write
-                  0x01aa60                  _I2C2_read
-                  0x01aac2                  _MastergetsI2C1
-                  0x01ab66                  _OpenI2C1
-                  0x01ab78                  _I2C1_reset
-                  0x01abd8                  _I2C1_write
-                  0x01ac3a                  _I2C1_read
-                  0x01ac9c                  _UART2Init
-                  0x01ad10                  _clear_tx2en
-                  0x01ad1c                  _set_tx2_en
-                  0x01ad2c                  _UART2PutChar
-                  0x01ad5e                  _flush_uart2
-                  0x01ad8a                  _UART1Init
-                  0x01adcc                  _flush_uart1
-                  0x01adf8                  _UART1PutChar
-                  0x01ae10                  _send_backup_pkt
-                  0x01ae60                  _Init_Timer1
-                  0x01ae88                  _Init_Timer2
-                  0x01aeb6                  _Init_Timer3
-                  0x01aede                  _Init_Timer4
-                  0x01af0c                  _Init_32bit_Timer
-                  0x01af40                  _read_time
-                  0x01af4a                  _read_realtime
-                  0x01af58                  _DeltaMsTimer
-                  0x01af72                  _DeltaTCNT
-                  0x01af8c                  _debug_pulse
-                  0x01afaa                  _read_32bit_realtime
-                  0x01afc2                  _CPU_RegisterTest
-                  0x01b118                  _optic_2_setup
-                  0x01b174                  _two_wire_optic
-                  0x01b192                  _optic_present
-                  0x01b37e                  _thermal_setup
-                  0x01b3dc                  _two_wire_thermal
-                  0x01b3f0                  _thermistor_present
-                  0x01b472                  _SPIMPolInit
-                  0x01b494                  _SPIMPolPut
-                  0x01b4b6                  _SPIMPolIsTransmitOver
-                  0x01b4e8                  _Init_ADC
-                  0x01b556                  _DelayUS
-                  0x01b59e                  _DelayMS
-                  0x01b5ba                  _init_ports
-                  0x01b618                  _memory_test
-                  0x01b66c                  _LoadAddr
-                  0x01b672                  _WriteMem
-                  0x01b688                  _WriteLatch
-                  0x01b690                  _ReadLatch
-                  0x01b698                  _JumptoDevice
-                  0x01b69e                  _Erase
-                  0x01b6bc                  _CPU_PCtest
-                  0x01b700                  _Init_DMA0
-                  0x01b73e                  _TestFunction1
-                  0x01b748                  _TestFunction2
+                  0x0131e4                  _optic_5_pulse
+                  0x0132ca                  _check_echo
+                  0x013414                  _check_diag
+                  0x0134ca                  _check_5wire_fault
+                  0x013708                  _calc_tank
+                  0x013976                  _scully_probe
+                  0x013a48                  _toggle_led
+                  0x013dc0                  _check_bk
+                  0x014122                  _logcrcerr
+                  0x01415e                  _logEEPROM
+                  0x0141d8                  _loginit
+                  0x01425c                  _logrelayerr
+                  0x014380                  _logvolterr
+                  0x014480                  _logmaintenanceerr
+                  0x01449a                  _log_dome_out
+                  0x01457a                  _nvSysFormat
+                  0x014606                  _nvSysInit
+                  0x014872                  _nvSysDia5Update
+                  0x0148aa                  _nvSysVoltUpdate
+                  0x0148dc                  _nvSysParmUpdate
+                  0x01491c                  _nvSysSet1Update
+                  0x01496a                  _nvSysParmDefaults
+                  0x0149dc                  _nvSysDSUpdate
+                  0x014a2c                  _nvSysWrBlock
+                  0x014adc                  _nvLogInit
+                  0x014bae                  _nvLogErase
+                  0x014bee                  _nvLogGet
+                  0x014c34                  _nvLogPut
+                  0x014cea                  _nvLogMerge
+                  0x014dce                  _nvLogRepeat
+                  0x014f10                  _eeMapPartition
+                  0x015034                  _eeReadBlock
+                  0x01509a                  _eeWriteByte
+                  0x0150b6                  _eeWriteBlock
+                  0x01511e                  _eeInit
+                  0x01521c                  _eeHomePtr
+                  0x01524c                  _eeReport
+                  0x015308                  _eeUpdateHome
+                  0x01574a                  _eeUpdateSys
+                  0x01579e                  _eeFormat
+                  0x0157d4                  _main_charge
+                  0x01581c                  _init_permit_relay
+                  0x01584e                  _permit_relay
+                  0x015a7c                  _permit_bypass
+                  0x015c7e                  _clr_bypass
+                  0x015cb4                  _set_bypass
+                  0x015d30                  _reset_bypass
+                  0x015dbc                  _main_relay_state
+                  0x015ee6                  _bak_relay_state
+                  0x015ff4                  _init_led
+                  0x016012                  _timer_heartbeat
+                  0x0161ce                  _set_mux
+                  0x016220                  _fetch_mux
+                  0x01624e                  _set_porte
+                  0x0162c2                  _read_relays
+                  0x016366                  _set_permit
+                  0x016372                  _set_nonpermit
+                  0x0163ae                  _long_swap
+                  0x01642a                  _int_swap
+                  0x01643c                  _display_probe
+                  0x016592                  _EnaFeatures
+                  0x01670e                  _dummy_func
+                  0x01672a                  _set_new_led
+                  0x016748                  _set_compartment_led
+                  0x016778                  _init_variables
+                  0x016872                  _report_tank_state
+                  0x016dd0                  _dry_probes
+                  0x016e14                  _dry_5W_probes
+                  0x016e64                  _unknown_probes
+                  0x016ebc                  _probe_leds_off
+                  0x016fe4                  _dfOpenFile
+                  0x017146                  _dfGetByte
+                  0x0171e8                  _dfCloseFile
+                  0x0171fe                  _dsOpenFile
+                  0x017232                  _dsCloseFile
+                  0x01723a                  _dsGetByte
+                  0x0172fe                  _dsGetDecn
+                  0x017358                  _dsTruckValidate
+                  0x01748a                  _is_truck_pulsing
+                  0x017622                  _EEPROM_read
+                  0x0176fe                  _EEPROM_write
+                  0x0177e6                  _eeBlockWrite
+                  0x0178c6                  _eeBlockRead
+                  0x0179a6                  _EEPROM_fill
+                  0x017a80                  _eeBlockFill
+                  0x017b54                  _eeCRC
+                  0x017cd6                  _StaticShortTest
+                  0x0181b2                  _AllShortTest
+                  0x018384                  _get_modbus_addr
+                  0x0183de                  _get_modbus_baud
+                  0x01840a                  _get_modbus_parity
+                  0x018440                  _get_modbus_csize
+                  0x01847a                  _modbus_init
+                  0x0184de                  _modbus_execloop_process
+                  0x0187d8                  _modbus_CRC
+                  0x018834                  _program_memory_CRC
+                  0x0188a6                  _SpcLEDBlink
+                  0x018974                  _SpcLEDOff
+                  0x01899c                  _SpecialOps
+                  0x018d8c                  _mbfClrEnaFeatures
+                  0x018de2                  _mbfSetEnaFeatures
+                  0x018f08                  _mbxForce
+                  0x019246                  _read_probes
+                  0x0192b0                  _setup_probes
+                  0x0192c0                  _wait_for_probes
+                  0x0192f4                  _convert_to_binary
+                  0x0194e6                  _ops_ADC
+                  0x01950e                  _read_ADC
+                  0x0195d4                  _read_muxADC
+                  0x0196f6                  _SPI_EEPROMInit
+                  0x019706                  _SPI_EEPROMWriteByte
+                  0x0197b0                  _SPI_EEPROMReadByte
+                  0x01984a                  _SPI_EEPROMPageWriteByte
+                  0x019912                  _SPIPageWrite
+                  0x0199de                  _SPI_EEPROMWriteEnable
+                  0x0199fa                  _SPI_EEPROMReadStatus
+                  0x019a36                  _spi_erase
+                  0x019a82                  _SPI_EEPROMReadDeviceID
+                  0x019b12                  _spi_erase_sector
+                  0x019b9c                  _init_I_O_Expander
+                  0x019ca2                  _test_jumpers
+                  0x019e1c                  _fetch_jumpers
+                  0x019ea4                  _read_jumpers
+                  0x019ffc                  _volts_jumper
+                  0x01a030                  _CheckGroundPresent
+                  0x01a3a0                  _set_gcheck
+                  0x01a3ae                  _clear_gcheck
+                  0x01a3bc                  _test_gnd_idle
+                  0x01a3e4                  _set_ground_reference
+                  0x01a420                  _deadman_init
+                  0x01a4a8                  _deadman_ops
+                  0x01a682                  _march_test
+                  0x01a826                  _mem_test
+                  0x01a8e0                  _MastergetsI2C2
+                  0x01a986                  _OpenI2C2
+                  0x01a998                  _I2C2_reset
+                  0x01a9f8                  _I2C2_write
+                  0x01aa5a                  _I2C2_read
+                  0x01aabc                  _MastergetsI2C1
+                  0x01ab60                  _OpenI2C1
+                  0x01ab72                  _I2C1_reset
+                  0x01abd2                  _I2C1_write
+                  0x01ac34                  _I2C1_read
+                  0x01ac96                  _UART2Init
+                  0x01ad0a                  _clear_tx2en
+                  0x01ad16                  _set_tx2_en
+                  0x01ad26                  _UART2PutChar
+                  0x01ad58                  _flush_uart2
+                  0x01ad84                  _UART1Init
+                  0x01adc6                  _flush_uart1
+                  0x01adf2                  _UART1PutChar
+                  0x01ae0a                  _send_backup_pkt
+                  0x01ae5a                  _Init_Timer1
+                  0x01ae82                  _Init_Timer2
+                  0x01aeb0                  _Init_Timer3
+                  0x01aed8                  _Init_Timer4
+                  0x01af06                  _Init_32bit_Timer
+                  0x01af3a                  _read_time
+                  0x01af44                  _read_realtime
+                  0x01af52                  _DeltaMsTimer
+                  0x01af6c                  _DeltaTCNT
+                  0x01af86                  _debug_pulse
+                  0x01afa4                  _read_32bit_realtime
+                  0x01afbc                  _CPU_RegisterTest
+                  0x01b112                  _optic_2_setup
+                  0x01b16e                  _two_wire_optic
+                  0x01b18c                  _optic_present
+                  0x01b378                  _thermal_setup
+                  0x01b3d6                  _two_wire_thermal
+                  0x01b3ea                  _thermistor_present
+                  0x01b46c                  _SPIMPolInit
+                  0x01b48e                  _SPIMPolPut
+                  0x01b4b0                  _SPIMPolIsTransmitOver
+                  0x01b4e2                  _Init_ADC
+                  0x01b550                  _DelayUS
+                  0x01b598                  _DelayMS
+                  0x01b5b4                  _init_ports
+                  0x01b612                  _memory_test
+                  0x01b666                  _LoadAddr
+                  0x01b66c                  _WriteMem
+                  0x01b682                  _WriteLatch
+                  0x01b68a                  _ReadLatch
+                  0x01b692                  _JumptoDevice
+                  0x01b698                  _Erase
+                  0x01b6b6                  _CPU_PCtest
+                  0x01b6fa                  _Init_DMA0
+                  0x01b738                  _TestFunction1
+                  0x01b742                  _TestFunction2
                   0xf80004                  __FGS.sec
 
 External Symbols in Program Memory (by name):
 
-                  0x0181b8                  _AllShortTest
-                  0x01b6bc                  _CPU_PCtest
-                  0x01afc2                  _CPU_RegisterTest
-                  0x01a036                  _CheckGroundPresent
+                  0x0181b2                  _AllShortTest
+                  0x01b6b6                  _CPU_PCtest
+                  0x01afbc                  _CPU_RegisterTest
+                  0x01a030                  _CheckGroundPresent
                   0x010432                  _Check_Truck_SN
                   0x00552a                  _DOW_CRC_tab
                   0x00fed0                  _Dallas_Bit_Read
@@ -1010,42 +1010,42 @@ External Symbols in Program Memory (by name):
                   0x00fdb8                  _Dallas_Reset
                   0x0029f6                  _DataRdyI2C1
                   0x002c36                  _DataRdyI2C2
-                  0x01b59e                  _DelayMS
-                  0x01b556                  _DelayUS
-                  0x01af58                  _DeltaMsTimer
-                  0x01af72                  _DeltaTCNT
-                  0x0179ac                  _EEPROM_fill
-                  0x017628                  _EEPROM_read
-                  0x017704                  _EEPROM_write
-                  0x016598                  _EnaFeatures
-                  0x01b69e                  _Erase
+                  0x01b598                  _DelayMS
+                  0x01b550                  _DelayUS
+                  0x01af52                  _DeltaMsTimer
+                  0x01af6c                  _DeltaTCNT
+                  0x0179a6                  _EEPROM_fill
+                  0x017622                  _EEPROM_read
+                  0x0176fe                  _EEPROM_write
+                  0x016592                  _EnaFeatures
+                  0x01b698                  _Erase
                   0x01083c                  _Greg_to_UNIX
                   0x0117ba                  _HighI_Off
                   0x011808                  _HighI_On
-                  0x01ac3a                  _I2C1_read
-                  0x01ab78                  _I2C1_reset
-                  0x01abd8                  _I2C1_write
-                  0x01aa60                  _I2C2_read
-                  0x01a99e                  _I2C2_reset
-                  0x01a9fe                  _I2C2_write
-                  0x01af0c                  _Init_32bit_Timer
-                  0x01b4e8                  _Init_ADC
-                  0x01b700                  _Init_DMA0
-                  0x01ae60                  _Init_Timer1
-                  0x01ae88                  _Init_Timer2
-                  0x01aeb6                  _Init_Timer3
-                  0x01aede                  _Init_Timer4
-                  0x01b698                  _JumptoDevice
+                  0x01ac34                  _I2C1_read
+                  0x01ab72                  _I2C1_reset
+                  0x01abd2                  _I2C1_write
+                  0x01aa5a                  _I2C2_read
+                  0x01a998                  _I2C2_reset
+                  0x01a9f8                  _I2C2_write
+                  0x01af06                  _Init_32bit_Timer
+                  0x01b4e2                  _Init_ADC
+                  0x01b6fa                  _Init_DMA0
+                  0x01ae5a                  _Init_Timer1
+                  0x01ae82                  _Init_Timer2
+                  0x01aeb0                  _Init_Timer3
+                  0x01aed8                  _Init_Timer4
+                  0x01b692                  _JumptoDevice
                   0x0069ea                  _LedAddr
-                  0x01b66c                  _LoadAddr
+                  0x01b666                  _LoadAddr
                   0x002a02                  _MasterWriteI2C1
                   0x002c42                  _MasterWriteI2C2
-                  0x01aac2                  _MastergetsI2C1
-                  0x01a8e6                  _MastergetsI2C2
-                  0x01ab66                  _OpenI2C1
-                  0x01a98c                  _OpenI2C2
+                  0x01aabc                  _MastergetsI2C1
+                  0x01a8e0                  _MastergetsI2C2
+                  0x01ab60                  _OpenI2C1
+                  0x01a986                  _OpenI2C2
                   0x010998                  _Print_Crnt_Time
-                  0x01b690                  _ReadLatch
+                  0x01b68a                  _ReadLatch
                   0x010232                  _Read_Bypass_SN
                   0x0104c0                  _Read_Clock
                   0x010120                  _Read_Dallas_SN
@@ -1057,36 +1057,36 @@ External Symbols in Program Memory (by name):
                   0x010102                  _Reset_Truck_SN
                   0x002be8                  _RestartI2C1
                   0x002e24                  _RestartI2C2
-                  0x01b472                  _SPIMPolInit
-                  0x01b4b6                  _SPIMPolIsTransmitOver
-                  0x01b494                  _SPIMPolPut
-                  0x019918                  _SPIPageWrite
-                  0x0196fc                  _SPI_EEPROMInit
-                  0x019850                  _SPI_EEPROMPageWriteByte
-                  0x0197b6                  _SPI_EEPROMReadByte
-                  0x019a88                  _SPI_EEPROMReadDeviceID
-                  0x019a00                  _SPI_EEPROMReadStatus
-                  0x01970c                  _SPI_EEPROMWriteByte
-                  0x0199e4                  _SPI_EEPROMWriteEnable
-                  0x0188ac                  _SpcLEDBlink
-                  0x01897a                  _SpcLEDOff
-                  0x0189a2                  _SpecialOps
+                  0x01b46c                  _SPIMPolInit
+                  0x01b4b0                  _SPIMPolIsTransmitOver
+                  0x01b48e                  _SPIMPolPut
+                  0x019912                  _SPIPageWrite
+                  0x0196f6                  _SPI_EEPROMInit
+                  0x01984a                  _SPI_EEPROMPageWriteByte
+                  0x0197b0                  _SPI_EEPROMReadByte
+                  0x019a82                  _SPI_EEPROMReadDeviceID
+                  0x0199fa                  _SPI_EEPROMReadStatus
+                  0x019706                  _SPI_EEPROMWriteByte
+                  0x0199de                  _SPI_EEPROMWriteEnable
+                  0x0188a6                  _SpcLEDBlink
+                  0x018974                  _SpcLEDOff
+                  0x01899c                  _SpecialOps
                   0x002bf0                  _StartI2C1
                   0x002e2c                  _StartI2C2
-                  0x017cdc                  _StaticShortTest
+                  0x017cd6                  _StaticShortTest
                   0x002bf8                  _StopI2C1
                   0x002e34                  _StopI2C2
                   0x01125a                  _TIM_log_fault
                   0x01131a                  _TIM_log_info
-                  0x01b73e                  _TestFunction1
-                  0x01b748                  _TestFunction2
-                  0x01ad8a                  _UART1Init
-                  0x01adf8                  _UART1PutChar
-                  0x01ac9c                  _UART2Init
-                  0x01ad2c                  _UART2PutChar
+                  0x01b738                  _TestFunction1
+                  0x01b742                  _TestFunction2
+                  0x01ad84                  _UART1Init
+                  0x01adf2                  _UART1PutChar
+                  0x01ac96                  _UART2Init
+                  0x01ad26                  _UART2PutChar
                   0x0106ee                  _UNIX_to_Greg
-                  0x01b688                  _WriteLatch
-                  0x01b672                  _WriteMem
+                  0x01b682                  _WriteLatch
+                  0x01b66c                  _WriteMem
                   0x01061e                  _Write_Clock
                   0x002402                  __ADC1Interrupt
                   0x00256e                  __AddressError
@@ -1132,23 +1132,23 @@ External Symbols in Program Memory (by name):
                   0x003016                  __vfprintf_s
                   0x013008                  _active_5wire
                   0x011872                  _active_two_wire
-                  0x015eec                  _bak_relay_state
+                  0x015ee6                  _bak_relay_state
                   0x00be5c                  _bypass_operation
-                  0x01370e                  _calc_tank
+                  0x013708                  _calc_tank
                   0x00e3e2                  _check_100OhmGnd
                   0x0122d0                  _check_2wire
                   0x00e286                  _check_5wire_5volt
-                  0x0134d0                  _check_5wire_fault
+                  0x0134ca                  _check_5wire_fault
                   0x011ed2                  _check_active_shorts
                   0x011ce8                  _check_all_oscillating
                   0x011b94                  _check_all_pulses
                   0x00d962                  _check_bias_noise
                   0x00dad8                  _check_bias_volt
-                  0x013dc6                  _check_bk
+                  0x013dc0                  _check_bk
                   0x00cf5e                  _check_channels
                   0x011782                  _check_compartment_count
-                  0x01341a                  _check_diag
-                  0x0132d0                  _check_echo
+                  0x013414                  _check_diag
+                  0x0132ca                  _check_echo
                   0x0116c6                  _check_fuel_type
                   0x00d7ae                  _check_open_c_volt
                   0x00dc84                  _check_probe_noise
@@ -1161,91 +1161,91 @@ External Symbols in Program Memory (by name):
                   0x012f10                  _check_time
                   0x011fdc                  _check_truck_gone
                   0x011652                  _check_unload_time
-                  0x01a3b4                  _clear_gcheck
-                  0x01ad10                  _clear_tx2en
-                  0x015c84                  _clr_bypass
-                  0x0192fa                  _convert_to_binary
+                  0x01a3ae                  _clear_gcheck
+                  0x01ad0a                  _clear_tx2en
+                  0x015c7e                  _clr_bypass
+                  0x0192f4                  _convert_to_binary
                   0x010e40                  _copy_scratchpad
                   0x010f12                  _dallas_fill
-                  0x01a426                  _deadman_init
-                  0x01a4ae                  _deadman_ops
-                  0x01af8c                  _debug_pulse
-                  0x0171ee                  _dfCloseFile
-                  0x01714c                  _dfGetByte
-                  0x016fea                  _dfOpenFile
+                  0x01a420                  _deadman_init
+                  0x01a4a8                  _deadman_ops
+                  0x01af86                  _debug_pulse
+                  0x0171e8                  _dfCloseFile
+                  0x017146                  _dfGetByte
+                  0x016fe4                  _dfOpenFile
                   0x00d076                  _diag_clock
                   0x00e63c                  _diagnostics
-                  0x016442                  _display_probe
-                  0x016e1a                  _dry_5W_probes
-                  0x016dd6                  _dry_probes
-                  0x017238                  _dsCloseFile
-                  0x017240                  _dsGetByte
-                  0x017304                  _dsGetDecn
-                  0x017204                  _dsOpenFile
-                  0x01735e                  _dsTruckValidate
-                  0x016714                  _dummy_func
+                  0x01643c                  _display_probe
+                  0x016e14                  _dry_5W_probes
+                  0x016dd0                  _dry_probes
+                  0x017232                  _dsCloseFile
+                  0x01723a                  _dsGetByte
+                  0x0172fe                  _dsGetDecn
+                  0x0171fe                  _dsOpenFile
+                  0x017358                  _dsTruckValidate
+                  0x01670e                  _dummy_func
                   0x00e6aa                  _ee83sts
-                  0x017a86                  _eeBlockFill
-                  0x0178cc                  _eeBlockRead
-                  0x0177ec                  _eeBlockWrite
-                  0x017b5a                  _eeCRC
-                  0x0157a4                  _eeFormat
-                  0x015222                  _eeHomePtr
-                  0x015124                  _eeInit
-                  0x014f16                  _eeMapPartition
-                  0x01503a                  _eeReadBlock
-                  0x015252                  _eeReport
-                  0x01530e                  _eeUpdateHome
-                  0x015750                  _eeUpdateSys
-                  0x0150bc                  _eeWriteBlock
-                  0x0150a0                  _eeWriteByte
-                  0x019e22                  _fetch_jumpers
-                  0x016226                  _fetch_mux
+                  0x017a80                  _eeBlockFill
+                  0x0178c6                  _eeBlockRead
+                  0x0177e6                  _eeBlockWrite
+                  0x017b54                  _eeCRC
+                  0x01579e                  _eeFormat
+                  0x01521c                  _eeHomePtr
+                  0x01511e                  _eeInit
+                  0x014f10                  _eeMapPartition
+                  0x015034                  _eeReadBlock
+                  0x01524c                  _eeReport
+                  0x015308                  _eeUpdateHome
+                  0x01574a                  _eeUpdateSys
+                  0x0150b6                  _eeWriteBlock
+                  0x01509a                  _eeWriteByte
+                  0x019e1c                  _fetch_jumpers
+                  0x016220                  _fetch_mux
                   0x0111d6                  _fetch_serial_number
                   0x012f70                  _five_wire_optic
                   0x00d0e8                  _flash_panel
-                  0x01adcc                  _flush_uart1
-                  0x01ad5e                  _flush_uart2
+                  0x01adc6                  _flush_uart1
+                  0x01ad58                  _flush_uart2
                   0x002f3c                  _fputs
-                  0x01838a                  _get_modbus_addr
-                  0x0183e4                  _get_modbus_baud
-                  0x018446                  _get_modbus_csize
-                  0x018410                  _get_modbus_parity
-                  0x019ba2                  _init_I_O_Expander
-                  0x015ffa                  _init_led
-                  0x015822                  _init_permit_relay
-                  0x01b5ba                  _init_ports
-                  0x01677e                  _init_variables
-                  0x016430                  _int_swap
-                  0x017490                  _is_truck_pulsing
-                  0x014164                  _logEEPROM
+                  0x018384                  _get_modbus_addr
+                  0x0183de                  _get_modbus_baud
+                  0x018440                  _get_modbus_csize
+                  0x01840a                  _get_modbus_parity
+                  0x019b9c                  _init_I_O_Expander
+                  0x015ff4                  _init_led
+                  0x01581c                  _init_permit_relay
+                  0x01b5b4                  _init_ports
+                  0x016778                  _init_variables
+                  0x01642a                  _int_swap
+                  0x01748a                  _is_truck_pulsing
+                  0x01415e                  _logEEPROM
                   0x0112e2                  _log_date_and_time
-                  0x0144a0                  _log_dome_out
-                  0x014128                  _logcrcerr
-                  0x0141de                  _loginit
-                  0x014486                  _logmaintenanceerr
-                  0x014262                  _logrelayerr
-                  0x014386                  _logvolterr
-                  0x0163b4                  _long_swap
+                  0x01449a                  _log_dome_out
+                  0x014122                  _logcrcerr
+                  0x0141d8                  _loginit
+                  0x014480                  _logmaintenanceerr
+                  0x01425c                  _logrelayerr
+                  0x014380                  _logvolterr
+                  0x0163ae                  _long_swap
                   0x0020da                  _main
                   0x00c908                  _main_activity
-                  0x0157da                  _main_charge
-                  0x015dc2                  _main_relay_state
-                  0x01a688                  _march_test
-                  0x018d92                  _mbfClrEnaFeatures
-                  0x018de8                  _mbfSetEnaFeatures
+                  0x0157d4                  _main_charge
+                  0x015dbc                  _main_relay_state
+                  0x01a682                  _march_test
+                  0x018d8c                  _mbfClrEnaFeatures
+                  0x018de2                  _mbfSetEnaFeatures
                   0x006c12                  _mbrRdReg
                   0x007cde                  _mbrWrReg
-                  0x018f0e                  _mbxForce
-                  0x01a82c                  _mem_test
+                  0x018f08                  _mbxForce
+                  0x01a826                  _mem_test
                   0x002eee                  _memcmp
                   0x002f20                  _memcpy
-                  0x01b618                  _memory_test
+                  0x01b612                  _memory_test
                   0x002f2e                  _memset
-                  0x0187de                  _modbus_CRC
+                  0x0187d8                  _modbus_CRC
                   0x00b046                  _modbus_decode
-                  0x0184e4                  _modbus_execloop_process
-                  0x018480                  _modbus_init
+                  0x0184de                  _modbus_execloop_process
+                  0x01847a                  _modbus_init
                   0x012846                  _nvKeyDelete
                   0x01238a                  _nvKeyEmpty
                   0x012896                  _nvKeyErase
@@ -1254,21 +1254,21 @@ External Symbols in Program Memory (by name):
                   0x0125e8                  _nvKeyGetMany
                   0x0126f4                  _nvKeyPut
                   0x012776                  _nvKeyPutMany
-                  0x014bb4                  _nvLogErase
-                  0x014bf4                  _nvLogGet
-                  0x014ae2                  _nvLogInit
-                  0x014cf0                  _nvLogMerge
-                  0x014c3a                  _nvLogPut
-                  0x014dd4                  _nvLogRepeat
-                  0x0149e2                  _nvSysDSUpdate
-                  0x014878                  _nvSysDia5Update
-                  0x014580                  _nvSysFormat
-                  0x01460c                  _nvSysInit
-                  0x014970                  _nvSysParmDefaults
-                  0x0148e2                  _nvSysParmUpdate
-                  0x014922                  _nvSysSet1Update
-                  0x0148b0                  _nvSysVoltUpdate
-                  0x014a32                  _nvSysWrBlock
+                  0x014bae                  _nvLogErase
+                  0x014bee                  _nvLogGet
+                  0x014adc                  _nvLogInit
+                  0x014cea                  _nvLogMerge
+                  0x014c34                  _nvLogPut
+                  0x014dce                  _nvLogRepeat
+                  0x0149dc                  _nvSysDSUpdate
+                  0x014872                  _nvSysDia5Update
+                  0x01457a                  _nvSysFormat
+                  0x014606                  _nvSysInit
+                  0x01496a                  _nvSysParmDefaults
+                  0x0148dc                  _nvSysParmUpdate
+                  0x01491c                  _nvSysSet1Update
+                  0x0148aa                  _nvSysVoltUpdate
+                  0x014a2c                  _nvSysWrBlock
                   0x012e72                  _nvTrkDelete
                   0x0128c8                  _nvTrkEmpty
                   0x012ede                  _nvTrkErase
@@ -1278,75 +1278,75 @@ External Symbols in Program Memory (by name):
                   0x012d48                  _nvTrkPut
                   0x012dce                  _nvTrkPutMany
                   0x012c90                  _nvTrkVrMany
-                  0x0194ec                  _ops_ADC
-                  0x01b118                  _optic_2_setup
-                  0x0131ea                  _optic_5_pulse
+                  0x0194e6                  _ops_ADC
+                  0x01b112                  _optic_2_setup
+                  0x0131e4                  _optic_5_pulse
                   0x013120                  _optic_5_setup
-                  0x01b192                  _optic_present
-                  0x015a82                  _permit_bypass
-                  0x015854                  _permit_relay
-                  0x016ec2                  _probe_leds_off
-                  0x01883a                  _program_memory_CRC
+                  0x01b18c                  _optic_present
+                  0x015a7c                  _permit_bypass
+                  0x01584e                  _permit_relay
+                  0x016ebc                  _probe_leds_off
+                  0x018834                  _program_memory_CRC
                   0x002f6c                  _putchar
                   0x002f58                  _puts
-                  0x01afaa                  _read_32bit_realtime
-                  0x019514                  _read_ADC
+                  0x01afa4                  _read_32bit_realtime
+                  0x01950e                  _read_ADC
                   0x010ae2                  _read_TIM_Go_NoGo_info
                   0x0109f2                  _read_TIM_compartment_info
                   0x00fbc6                  _read_bypass
-                  0x019eaa                  _read_jumpers
-                  0x0195da                  _read_muxADC
-                  0x01924c                  _read_probes
-                  0x01af4a                  _read_realtime
-                  0x0162c8                  _read_relays
-                  0x01af40                  _read_time
+                  0x019ea4                  _read_jumpers
+                  0x0195d4                  _read_muxADC
+                  0x019246                  _read_probes
+                  0x01af44                  _read_realtime
+                  0x0162c2                  _read_relays
+                  0x01af3a                  _read_time
                   0x00fd96                  _report_bypass
                   0x010066                  _report_clock
-                  0x016878                  _report_tank_state
-                  0x015d36                  _reset_bypass
+                  0x016872                  _report_tank_state
+                  0x015d30                  _reset_bypass
                   0x00fb98                  _reset_iButton
-                  0x01397c                  _scully_probe
-                  0x01ae10                  _send_backup_pkt
+                  0x013976                  _scully_probe
+                  0x01ae0a                  _send_backup_pkt
                   0x00e484                  _service_charge
                   0x00e44c                  _service_wait
-                  0x015cba                  _set_bypass
-                  0x01674e                  _set_compartment_led
-                  0x01a3a6                  _set_gcheck
-                  0x01a3ea                  _set_ground_reference
+                  0x015cb4                  _set_bypass
+                  0x016748                  _set_compartment_led
+                  0x01a3a0                  _set_gcheck
+                  0x01a3e4                  _set_ground_reference
                   0x00bd02                  _set_main_state
-                  0x0161d4                  _set_mux
-                  0x016730                  _set_new_led
-                  0x016378                  _set_nonpermit
-                  0x01636c                  _set_permit
-                  0x016254                  _set_porte
-                  0x01ad1c                  _set_tx2_en
-                  0x0192b6                  _setup_probes
+                  0x0161ce                  _set_mux
+                  0x01672a                  _set_new_led
+                  0x016372                  _set_nonpermit
+                  0x016366                  _set_permit
+                  0x01624e                  _set_porte
+                  0x01ad16                  _set_tx2_en
+                  0x0192b0                  _setup_probes
                   0x0120aa                  _short_6to4_5to3
                   0x00d444                  _show_revision
-                  0x019a3c                  _spi_erase
-                  0x019b18                  _spi_erase_sector
+                  0x019a36                  _spi_erase
+                  0x019b12                  _spi_erase_sector
                   0x0115a4                  _superTIM_ds_validate
                   0x010a70                  _test_for_new_front_panel
-                  0x01a3c2                  _test_gnd_idle
-                  0x019ca8                  _test_jumpers
-                  0x01b37e                  _thermal_setup
-                  0x01b3f0                  _thermistor_present
+                  0x01a3bc                  _test_gnd_idle
+                  0x019ca2                  _test_jumpers
+                  0x01b378                  _thermal_setup
+                  0x01b3ea                  _thermistor_present
                   0x0110fa                  _tim_block_read
                   0x010f58                  _tim_block_write
-                  0x016018                  _timer_heartbeat
-                  0x013a4e                  _toggle_led
+                  0x016012                  _timer_heartbeat
+                  0x013a48                  _toggle_led
                   0x0029e8                  _toupper
                   0x00c800                  _truck_fini
                   0x00c638                  _truck_gone
                   0x00cb62                  _truck_inactive
                   0x012f62                  _try_five_wire
-                  0x01b174                  _two_wire_optic
+                  0x01b16e                  _two_wire_optic
                   0x011856                  _two_wire_start
-                  0x01b3dc                  _two_wire_thermal
-                  0x016e6a                  _unknown_probes
+                  0x01b3d6                  _two_wire_thermal
+                  0x016e64                  _unknown_probes
                   0x010c74                  _verify_scratchpad
-                  0x01a002                  _volts_jumper
-                  0x0192c6                  _wait_for_probes
+                  0x019ffc                  _volts_jumper
+                  0x0192c0                  _wait_for_probes
                   0x00c9d4                  _which_probe_type
                   0x00290c                  _write
                   0x010b38                  _write_to_scratchpad
@@ -1579,7 +1579,7 @@ __FSS
 
 __FGS             0xf80004          0x2
  *(__FGS.sec*)
- __FGS.sec        0xf80004          0x2 /CW/_FGS€×¸×__FGS.sec
+ __FGS.sec        0xf80004          0x2 /CW/_FGS YÔØYÔ__FGS.sec
                   0xf80004                  __FGS.sec
 
 __FOSCSEL         0xf80006          0x2
@@ -1729,7 +1729,7 @@ __FUID3
  .debug_abbrev    0x003fc2        0x28b build/default/production/_ext/812168374/main.o
  .debug_abbrev    0x00424d        0x105 build/default/production/_ext/812168374/deadman.o
 
-.debug_line       0x000000       0x5129
+.debug_line       0x000000       0x5127
  *(.debug_line)
  .debug_line      0x000000         0xe0 build/default/production/_ext/812168374/write.o
  .debug_line      0x0000e0        0x147 build/default/production/_ext/812168374/adc.o
@@ -1761,30 +1761,30 @@ __FUID3
  .debug_line      0x0028db        0x211 build/default/production/_ext/812168374/nvsystem.o
  .debug_line      0x002aec        0x258 build/default/production/_ext/812168374/nvtruck.o
  .debug_line      0x002d44         0xaa build/default/production/_ext/812168374/optic2.o
- .debug_line      0x002dee        0x267 build/default/production/_ext/812168374/optic5.o
- .debug_line      0x003055        0x1c0 build/default/production/_ext/812168374/permit.o
- .debug_line      0x003215        0x467 build/default/production/_ext/812168374/pod.o
- .debug_line      0x00367c        0x2fc build/default/production/_ext/812168374/printout.o
- .debug_line      0x003978        0x17b build/default/production/_ext/812168374/shorts.o
- .debug_line      0x003af3        0x1c0 build/default/production/_ext/812168374/sim.o
- .debug_line      0x003cb3        0x141 build/default/production/_ext/812168374/specops.o
- .debug_line      0x003df4         0x85 build/default/production/_ext/812168374/thermist.o
- .debug_line      0x003e79         0xae build/default/production/_ext/812168374/traps.o
- .debug_line      0x003f27        0x539 build/default/production/_ext/812168374/trukstat.o
- .debug_line      0x004460         0x33 build/default/production/_ext/2133044052/build_date.o
- .debug_line      0x004493        0x26e build/default/production/_ext/812168374/tim_utl.o
- .debug_line      0x004701         0x7c build/default/production/_ext/812168374/spi_mpol.o
- .debug_line      0x00477d        0x126 build/default/production/_ext/812168374/spi_eeprom.o
- .debug_line      0x0048a3         0x65 build/default/production/_ext/812168374/memory.o
- .debug_line      0x004908         0xe4 build/default/production/_ext/812168374/uart.o
- .debug_line      0x0049ec         0xcb build/default/production/_ext/812168374/isr_uart.o
- .debug_line      0x004ab7         0xd6 build/default/production/_ext/812168374/march_tst.o
- .debug_line      0x004b8d         0x1a build/default/production/_ext/812168374/null_signature.o
- .debug_line      0x004ba7         0x74 build/default/production/_ext/812168374/crt0_standard.o
- .debug_line      0x004c1b         0x6b build/default/production/_ext/812168374/memory_test.o
- .debug_line      0x004c86         0x59 build/default/production/_ext/812168374/test_function.o
- .debug_line      0x004cdf        0x344 build/default/production/_ext/812168374/main.o
- .debug_line      0x005023        0x106 build/default/production/_ext/812168374/deadman.o
+ .debug_line      0x002dee        0x265 build/default/production/_ext/812168374/optic5.o
+ .debug_line      0x003053        0x1c0 build/default/production/_ext/812168374/permit.o
+ .debug_line      0x003213        0x467 build/default/production/_ext/812168374/pod.o
+ .debug_line      0x00367a        0x2fc build/default/production/_ext/812168374/printout.o
+ .debug_line      0x003976        0x17b build/default/production/_ext/812168374/shorts.o
+ .debug_line      0x003af1        0x1c0 build/default/production/_ext/812168374/sim.o
+ .debug_line      0x003cb1        0x141 build/default/production/_ext/812168374/specops.o
+ .debug_line      0x003df2         0x85 build/default/production/_ext/812168374/thermist.o
+ .debug_line      0x003e77         0xae build/default/production/_ext/812168374/traps.o
+ .debug_line      0x003f25        0x539 build/default/production/_ext/812168374/trukstat.o
+ .debug_line      0x00445e         0x33 build/default/production/_ext/2133044052/build_date.o
+ .debug_line      0x004491        0x26e build/default/production/_ext/812168374/tim_utl.o
+ .debug_line      0x0046ff         0x7c build/default/production/_ext/812168374/spi_mpol.o
+ .debug_line      0x00477b        0x126 build/default/production/_ext/812168374/spi_eeprom.o
+ .debug_line      0x0048a1         0x65 build/default/production/_ext/812168374/memory.o
+ .debug_line      0x004906         0xe4 build/default/production/_ext/812168374/uart.o
+ .debug_line      0x0049ea         0xcb build/default/production/_ext/812168374/isr_uart.o
+ .debug_line      0x004ab5         0xd6 build/default/production/_ext/812168374/march_tst.o
+ .debug_line      0x004b8b         0x1a build/default/production/_ext/812168374/null_signature.o
+ .debug_line      0x004ba5         0x74 build/default/production/_ext/812168374/crt0_standard.o
+ .debug_line      0x004c19         0x6b build/default/production/_ext/812168374/memory_test.o
+ .debug_line      0x004c84         0x59 build/default/production/_ext/812168374/test_function.o
+ .debug_line      0x004cdd        0x344 build/default/production/_ext/812168374/main.o
+ .debug_line      0x005021        0x106 build/default/production/_ext/812168374/deadman.o
 
 .debug_frame      0x000000       0x3a64
  *(.debug_frame)
@@ -3087,7 +3087,7 @@ LOAD c:/program files (x86)/microchip/xc16/v1.41/bin/bin/../../lib\libm-elf.a
 LOAD c:/program files (x86)/microchip/xc16/v1.41/bin/bin/../../lib\libc-elf.a
 END GROUP
 OUTPUT(dist/default/production/Main.X.production.elf elf32-pic30)
-LOAD /CW/_FGS€×¸×__FGS.sec
+LOAD /CW/_FGS YÔØYÔ__FGS.sec
 LOAD jump_table
 LOAD default_isr
 LOAD heap
@@ -3753,7 +3753,7 @@ _0455E6C05db35463
  .const             0xe9fa          0xa build/default/production/_ext/812168374/memory_test.o
                     0xe9fa                  memory_test_table
 
-.text             0x006a04      0x14862
+.text             0x006a04      0x1485c
  .text            0x006a04       0x2a2e build/default/production/_ext/812168374/modreg.o
                   0x006c12                  _mbrRdReg
                   0x007cde                  _mbrWrReg
@@ -3862,245 +3862,245 @@ _0455E6C05db35463
                   0x012dce                  _nvTrkPutMany
                   0x012e72                  _nvTrkDelete
                   0x012ede                  _nvTrkErase
- .text            0x012f10        0xb3e build/default/production/_ext/812168374/optic5.o
+ .text            0x012f10        0xb38 build/default/production/_ext/812168374/optic5.o
                   0x012f10                  _check_time
                   0x012f62                  _try_five_wire
                   0x012f70                  _five_wire_optic
                   0x013008                  _active_5wire
                   0x013120                  _optic_5_setup
-                  0x0131ea                  _optic_5_pulse
-                  0x0132d0                  _check_echo
-                  0x01341a                  _check_diag
-                  0x0134d0                  _check_5wire_fault
-                  0x01370e                  _calc_tank
-                  0x01397c                  _scully_probe
- .text            0x013a4e        0xb32 build/default/production/_ext/812168374/main.o
-                  0x013a4e                  _toggle_led
-                  0x013dc6                  _check_bk
-                  0x014128                  _logcrcerr
-                  0x014164                  _logEEPROM
-                  0x0141de                  _loginit
-                  0x014262                  _logrelayerr
-                  0x014386                  _logvolterr
-                  0x014486                  _logmaintenanceerr
-                  0x0144a0                  _log_dome_out
- .text            0x014580        0x996 build/default/production/_ext/812168374/nvsystem.o
-                  0x014580                  _nvSysFormat
-                  0x01460c                  _nvSysInit
-                  0x014878                  _nvSysDia5Update
-                  0x0148b0                  _nvSysVoltUpdate
-                  0x0148e2                  _nvSysParmUpdate
-                  0x014922                  _nvSysSet1Update
-                  0x014970                  _nvSysParmDefaults
-                  0x0149e2                  _nvSysDSUpdate
-                  0x014a32                  _nvSysWrBlock
-                  0x014ae2                  _nvLogInit
-                  0x014bb4                  _nvLogErase
-                  0x014bf4                  _nvLogGet
-                  0x014c3a                  _nvLogPut
-                  0x014cf0                  _nvLogMerge
-                  0x014dd4                  _nvLogRepeat
- .text            0x014f16        0x8c4 build/default/production/_ext/812168374/esquared.o
-                  0x014f16                  _eeMapPartition
-                  0x01503a                  _eeReadBlock
-                  0x0150a0                  _eeWriteByte
-                  0x0150bc                  _eeWriteBlock
-                  0x015124                  _eeInit
-                  0x015222                  _eeHomePtr
-                  0x015252                  _eeReport
-                  0x01530e                  _eeUpdateHome
-                  0x015750                  _eeUpdateSys
-                  0x0157a4                  _eeFormat
- .text            0x0157da        0x820 build/default/production/_ext/812168374/permit.o
-                  0x0157da                  _main_charge
-                  0x015822                  _init_permit_relay
-                  0x015854                  _permit_relay
-                  0x015a82                  _permit_bypass
-                  0x015c84                  _clr_bypass
-                  0x015cba                  _set_bypass
-                  0x015d36                  _reset_bypass
-                  0x015dc2                  _main_relay_state
-                  0x015eec                  _bak_relay_state
- .text            0x015ffa        0x784 build/default/production/_ext/812168374/sim.o
-                  0x015ffa                  _init_led
-                  0x016018                  _timer_heartbeat
-                  0x0161d4                  _set_mux
-                  0x016226                  _fetch_mux
-                  0x016254                  _set_porte
-                  0x0162c8                  _read_relays
-                  0x01636c                  _set_permit
-                  0x016378                  _set_nonpermit
-                  0x0163b4                  _long_swap
-                  0x016430                  _int_swap
-                  0x016442                  _display_probe
-                  0x016598                  _EnaFeatures
-                  0x016714                  _dummy_func
-                  0x016730                  _set_new_led
-                  0x01674e                  _set_compartment_led
- .text            0x01677e        0x772 build/default/production/_ext/812168374/dumfile.o
-                  0x01677e                  _init_variables
-                  0x016878                  _report_tank_state
-                  0x016dd6                  _dry_probes
-                  0x016e1a                  _dry_5W_probes
-                  0x016e6a                  _unknown_probes
-                  0x016ec2                  _probe_leds_off
- .text            0x016ef0        0x738 build/default/production/_ext/812168374/dfile.o
-                  0x016fea                  _dfOpenFile
-                  0x01714c                  _dfGetByte
-                  0x0171ee                  _dfCloseFile
-                  0x017204                  _dsOpenFile
-                  0x017238                  _dsCloseFile
-                  0x017240                  _dsGetByte
-                  0x017304                  _dsGetDecn
-                  0x01735e                  _dsTruckValidate
-                  0x017490                  _is_truck_pulsing
- .text            0x017628        0x6b4 build/default/production/_ext/812168374/eeprom.o
-                  0x017628                  _EEPROM_read
-                  0x017704                  _EEPROM_write
-                  0x0177ec                  _eeBlockWrite
-                  0x0178cc                  _eeBlockRead
-                  0x0179ac                  _EEPROM_fill
-                  0x017a86                  _eeBlockFill
-                  0x017b5a                  _eeCRC
- .text            0x017cdc        0x6ae build/default/production/_ext/812168374/shorts.o
-                  0x017cdc                  _StaticShortTest
-                  0x0181b8                  _AllShortTest
- .text            0x01838a        0x522 build/default/production/_ext/812168374/modbus.o
-                  0x01838a                  _get_modbus_addr
-                  0x0183e4                  _get_modbus_baud
-                  0x018410                  _get_modbus_parity
-                  0x018446                  _get_modbus_csize
-                  0x018480                  _modbus_init
-                  0x0184e4                  _modbus_execloop_process
-                  0x0187de                  _modbus_CRC
-                  0x01883a                  _program_memory_CRC
- .text            0x0188ac        0x4e6 build/default/production/_ext/812168374/specops.o
-                  0x0188ac                  _SpcLEDBlink
-                  0x01897a                  _SpcLEDOff
-                  0x0189a2                  _SpecialOps
- .text            0x018d92        0x4ba build/default/production/_ext/812168374/modfrc.o
-                  0x018d92                  _mbfClrEnaFeatures
-                  0x018de8                  _mbfSetEnaFeatures
-                  0x018f0e                  _mbxForce
- .text            0x01924c        0x4b0 build/default/production/_ext/812168374/adc.o
-                  0x01924c                  _read_probes
-                  0x0192b6                  _setup_probes
-                  0x0192c6                  _wait_for_probes
-                  0x0192fa                  _convert_to_binary
-                  0x0194ec                  _ops_ADC
-                  0x019514                  _read_ADC
-                  0x0195da                  _read_muxADC
- .text            0x0196fc        0x4a6 build/default/production/_ext/812168374/spi_eeprom.o
-                  0x0196fc                  _SPI_EEPROMInit
-                  0x01970c                  _SPI_EEPROMWriteByte
-                  0x0197b6                  _SPI_EEPROMReadByte
-                  0x019850                  _SPI_EEPROMPageWriteByte
-                  0x019918                  _SPIPageWrite
-                  0x0199e4                  _SPI_EEPROMWriteEnable
-                  0x019a00                  _SPI_EEPROMReadStatus
-                  0x019a3c                  _spi_erase
-                  0x019a88                  _SPI_EEPROMReadDeviceID
-                  0x019b18                  _spi_erase_sector
- .text            0x019ba2        0x494 build/default/production/_ext/812168374/jumpers.o
-                  0x019ba2                  _init_I_O_Expander
-                  0x019ca8                  _test_jumpers
-                  0x019e22                  _fetch_jumpers
-                  0x019eaa                  _read_jumpers
-                  0x01a002                  _volts_jumper
- .text            0x01a036        0x3f0 build/default/production/_ext/812168374/grndchck.o
-                  0x01a036                  _CheckGroundPresent
-                  0x01a3a6                  _set_gcheck
-                  0x01a3b4                  _clear_gcheck
-                  0x01a3c2                  _test_gnd_idle
-                  0x01a3ea                  _set_ground_reference
- .text            0x01a426        0x262 build/default/production/_ext/812168374/deadman.o
-                  0x01a426                  _deadman_init
-                  0x01a4ae                  _deadman_ops
- .text            0x01a688        0x25e build/default/production/_ext/812168374/march_tst.o
-                  0x01a688                  _march_test
-                  0x01a82c                  _mem_test
- .text            0x01a8e6        0x1dc build/default/production/_ext/812168374/i2c_2.o
-                  0x01a8e6                  _MastergetsI2C2
-                  0x01a98c                  _OpenI2C2
-                  0x01a99e                  _I2C2_reset
-                  0x01a9fe                  _I2C2_write
-                  0x01aa60                  _I2C2_read
- .text            0x01aac2        0x1da build/default/production/_ext/812168374/i2c_1.o
-                  0x01aac2                  _MastergetsI2C1
-                  0x01ab66                  _OpenI2C1
-                  0x01ab78                  _I2C1_reset
-                  0x01abd8                  _I2C1_write
-                  0x01ac3a                  _I2C1_read
- .text            0x01ac9c        0x1c4 build/default/production/_ext/812168374/uart.o
-                  0x01ac9c                  _UART2Init
-                  0x01ad10                  _clear_tx2en
-                  0x01ad1c                  _set_tx2_en
-                  0x01ad2c                  _UART2PutChar
-                  0x01ad5e                  _flush_uart2
-                  0x01ad8a                  _UART1Init
-                  0x01adcc                  _flush_uart1
-                  0x01adf8                  _UART1PutChar
-                  0x01ae10                  _send_backup_pkt
- .text            0x01ae60        0x162 build/default/production/_ext/812168374/init_timer.o
-                  0x01ae60                  _Init_Timer1
-                  0x01ae88                  _Init_Timer2
-                  0x01aeb6                  _Init_Timer3
-                  0x01aede                  _Init_Timer4
-                  0x01af0c                  _Init_32bit_Timer
-                  0x01af40                  _read_time
-                  0x01af4a                  _read_realtime
-                  0x01af58                  _DeltaMsTimer
-                  0x01af72                  _DeltaTCNT
-                  0x01af8c                  _debug_pulse
-                  0x01afaa                  _read_32bit_realtime
- .text            0x01afc2        0x156 build/default/production/_ext/812168374/CPURegisterTest.o
-                  0x01afc2                  _CPU_RegisterTest
- .text            0x01b118        0x14e build/default/production/_ext/812168374/optic2.o
-                  0x01b118                  _optic_2_setup
-                  0x01b174                  _two_wire_optic
-                  0x01b192                  _optic_present
+                  0x0131e4                  _optic_5_pulse
+                  0x0132ca                  _check_echo
+                  0x013414                  _check_diag
+                  0x0134ca                  _check_5wire_fault
+                  0x013708                  _calc_tank
+                  0x013976                  _scully_probe
+ .text            0x013a48        0xb32 build/default/production/_ext/812168374/main.o
+                  0x013a48                  _toggle_led
+                  0x013dc0                  _check_bk
+                  0x014122                  _logcrcerr
+                  0x01415e                  _logEEPROM
+                  0x0141d8                  _loginit
+                  0x01425c                  _logrelayerr
+                  0x014380                  _logvolterr
+                  0x014480                  _logmaintenanceerr
+                  0x01449a                  _log_dome_out
+ .text            0x01457a        0x996 build/default/production/_ext/812168374/nvsystem.o
+                  0x01457a                  _nvSysFormat
+                  0x014606                  _nvSysInit
+                  0x014872                  _nvSysDia5Update
+                  0x0148aa                  _nvSysVoltUpdate
+                  0x0148dc                  _nvSysParmUpdate
+                  0x01491c                  _nvSysSet1Update
+                  0x01496a                  _nvSysParmDefaults
+                  0x0149dc                  _nvSysDSUpdate
+                  0x014a2c                  _nvSysWrBlock
+                  0x014adc                  _nvLogInit
+                  0x014bae                  _nvLogErase
+                  0x014bee                  _nvLogGet
+                  0x014c34                  _nvLogPut
+                  0x014cea                  _nvLogMerge
+                  0x014dce                  _nvLogRepeat
+ .text            0x014f10        0x8c4 build/default/production/_ext/812168374/esquared.o
+                  0x014f10                  _eeMapPartition
+                  0x015034                  _eeReadBlock
+                  0x01509a                  _eeWriteByte
+                  0x0150b6                  _eeWriteBlock
+                  0x01511e                  _eeInit
+                  0x01521c                  _eeHomePtr
+                  0x01524c                  _eeReport
+                  0x015308                  _eeUpdateHome
+                  0x01574a                  _eeUpdateSys
+                  0x01579e                  _eeFormat
+ .text            0x0157d4        0x820 build/default/production/_ext/812168374/permit.o
+                  0x0157d4                  _main_charge
+                  0x01581c                  _init_permit_relay
+                  0x01584e                  _permit_relay
+                  0x015a7c                  _permit_bypass
+                  0x015c7e                  _clr_bypass
+                  0x015cb4                  _set_bypass
+                  0x015d30                  _reset_bypass
+                  0x015dbc                  _main_relay_state
+                  0x015ee6                  _bak_relay_state
+ .text            0x015ff4        0x784 build/default/production/_ext/812168374/sim.o
+                  0x015ff4                  _init_led
+                  0x016012                  _timer_heartbeat
+                  0x0161ce                  _set_mux
+                  0x016220                  _fetch_mux
+                  0x01624e                  _set_porte
+                  0x0162c2                  _read_relays
+                  0x016366                  _set_permit
+                  0x016372                  _set_nonpermit
+                  0x0163ae                  _long_swap
+                  0x01642a                  _int_swap
+                  0x01643c                  _display_probe
+                  0x016592                  _EnaFeatures
+                  0x01670e                  _dummy_func
+                  0x01672a                  _set_new_led
+                  0x016748                  _set_compartment_led
+ .text            0x016778        0x772 build/default/production/_ext/812168374/dumfile.o
+                  0x016778                  _init_variables
+                  0x016872                  _report_tank_state
+                  0x016dd0                  _dry_probes
+                  0x016e14                  _dry_5W_probes
+                  0x016e64                  _unknown_probes
+                  0x016ebc                  _probe_leds_off
+ .text            0x016eea        0x738 build/default/production/_ext/812168374/dfile.o
+                  0x016fe4                  _dfOpenFile
+                  0x017146                  _dfGetByte
+                  0x0171e8                  _dfCloseFile
+                  0x0171fe                  _dsOpenFile
+                  0x017232                  _dsCloseFile
+                  0x01723a                  _dsGetByte
+                  0x0172fe                  _dsGetDecn
+                  0x017358                  _dsTruckValidate
+                  0x01748a                  _is_truck_pulsing
+ .text            0x017622        0x6b4 build/default/production/_ext/812168374/eeprom.o
+                  0x017622                  _EEPROM_read
+                  0x0176fe                  _EEPROM_write
+                  0x0177e6                  _eeBlockWrite
+                  0x0178c6                  _eeBlockRead
+                  0x0179a6                  _EEPROM_fill
+                  0x017a80                  _eeBlockFill
+                  0x017b54                  _eeCRC
+ .text            0x017cd6        0x6ae build/default/production/_ext/812168374/shorts.o
+                  0x017cd6                  _StaticShortTest
+                  0x0181b2                  _AllShortTest
+ .text            0x018384        0x522 build/default/production/_ext/812168374/modbus.o
+                  0x018384                  _get_modbus_addr
+                  0x0183de                  _get_modbus_baud
+                  0x01840a                  _get_modbus_parity
+                  0x018440                  _get_modbus_csize
+                  0x01847a                  _modbus_init
+                  0x0184de                  _modbus_execloop_process
+                  0x0187d8                  _modbus_CRC
+                  0x018834                  _program_memory_CRC
+ .text            0x0188a6        0x4e6 build/default/production/_ext/812168374/specops.o
+                  0x0188a6                  _SpcLEDBlink
+                  0x018974                  _SpcLEDOff
+                  0x01899c                  _SpecialOps
+ .text            0x018d8c        0x4ba build/default/production/_ext/812168374/modfrc.o
+                  0x018d8c                  _mbfClrEnaFeatures
+                  0x018de2                  _mbfSetEnaFeatures
+                  0x018f08                  _mbxForce
+ .text            0x019246        0x4b0 build/default/production/_ext/812168374/adc.o
+                  0x019246                  _read_probes
+                  0x0192b0                  _setup_probes
+                  0x0192c0                  _wait_for_probes
+                  0x0192f4                  _convert_to_binary
+                  0x0194e6                  _ops_ADC
+                  0x01950e                  _read_ADC
+                  0x0195d4                  _read_muxADC
+ .text            0x0196f6        0x4a6 build/default/production/_ext/812168374/spi_eeprom.o
+                  0x0196f6                  _SPI_EEPROMInit
+                  0x019706                  _SPI_EEPROMWriteByte
+                  0x0197b0                  _SPI_EEPROMReadByte
+                  0x01984a                  _SPI_EEPROMPageWriteByte
+                  0x019912                  _SPIPageWrite
+                  0x0199de                  _SPI_EEPROMWriteEnable
+                  0x0199fa                  _SPI_EEPROMReadStatus
+                  0x019a36                  _spi_erase
+                  0x019a82                  _SPI_EEPROMReadDeviceID
+                  0x019b12                  _spi_erase_sector
+ .text            0x019b9c        0x494 build/default/production/_ext/812168374/jumpers.o
+                  0x019b9c                  _init_I_O_Expander
+                  0x019ca2                  _test_jumpers
+                  0x019e1c                  _fetch_jumpers
+                  0x019ea4                  _read_jumpers
+                  0x019ffc                  _volts_jumper
+ .text            0x01a030        0x3f0 build/default/production/_ext/812168374/grndchck.o
+                  0x01a030                  _CheckGroundPresent
+                  0x01a3a0                  _set_gcheck
+                  0x01a3ae                  _clear_gcheck
+                  0x01a3bc                  _test_gnd_idle
+                  0x01a3e4                  _set_ground_reference
+ .text            0x01a420        0x262 build/default/production/_ext/812168374/deadman.o
+                  0x01a420                  _deadman_init
+                  0x01a4a8                  _deadman_ops
+ .text            0x01a682        0x25e build/default/production/_ext/812168374/march_tst.o
+                  0x01a682                  _march_test
+                  0x01a826                  _mem_test
+ .text            0x01a8e0        0x1dc build/default/production/_ext/812168374/i2c_2.o
+                  0x01a8e0                  _MastergetsI2C2
+                  0x01a986                  _OpenI2C2
+                  0x01a998                  _I2C2_reset
+                  0x01a9f8                  _I2C2_write
+                  0x01aa5a                  _I2C2_read
+ .text            0x01aabc        0x1da build/default/production/_ext/812168374/i2c_1.o
+                  0x01aabc                  _MastergetsI2C1
+                  0x01ab60                  _OpenI2C1
+                  0x01ab72                  _I2C1_reset
+                  0x01abd2                  _I2C1_write
+                  0x01ac34                  _I2C1_read
+ .text            0x01ac96        0x1c4 build/default/production/_ext/812168374/uart.o
+                  0x01ac96                  _UART2Init
+                  0x01ad0a                  _clear_tx2en
+                  0x01ad16                  _set_tx2_en
+                  0x01ad26                  _UART2PutChar
+                  0x01ad58                  _flush_uart2
+                  0x01ad84                  _UART1Init
+                  0x01adc6                  _flush_uart1
+                  0x01adf2                  _UART1PutChar
+                  0x01ae0a                  _send_backup_pkt
+ .text            0x01ae5a        0x162 build/default/production/_ext/812168374/init_timer.o
+                  0x01ae5a                  _Init_Timer1
+                  0x01ae82                  _Init_Timer2
+                  0x01aeb0                  _Init_Timer3
+                  0x01aed8                  _Init_Timer4
+                  0x01af06                  _Init_32bit_Timer
+                  0x01af3a                  _read_time
+                  0x01af44                  _read_realtime
+                  0x01af52                  _DeltaMsTimer
+                  0x01af6c                  _DeltaTCNT
+                  0x01af86                  _debug_pulse
+                  0x01afa4                  _read_32bit_realtime
+ .text            0x01afbc        0x156 build/default/production/_ext/812168374/CPURegisterTest.o
+                  0x01afbc                  _CPU_RegisterTest
+ .text            0x01b112        0x14e build/default/production/_ext/812168374/optic2.o
+                  0x01b112                  _optic_2_setup
+                  0x01b16e                  _two_wire_optic
+                  0x01b18c                  _optic_present
 
-.dinit            0x01b266        0x118
- .dinit           0x01b266        0x118 data_init
+.dinit            0x01b260        0x118
+ .dinit           0x01b260        0x118 data_init
 
-.text             0x01b37e        0x3c0
- .text            0x01b37e         0xf4 build/default/production/_ext/812168374/thermist.o
-                  0x01b37e                  _thermal_setup
-                  0x01b3dc                  _two_wire_thermal
-                  0x01b3f0                  _thermistor_present
- .text            0x01b472         0x76 build/default/production/_ext/812168374/spi_mpol.o
-                  0x01b472                  _SPIMPolInit
-                  0x01b494                  _SPIMPolPut
-                  0x01b4b6                  _SPIMPolIsTransmitOver
- .text            0x01b4e8         0x6e build/default/production/_ext/812168374/init_ADC.o
-                  0x01b4e8                  _Init_ADC
- .text            0x01b556         0x64 build/default/production/_ext/812168374/delay.o
-                  0x01b556                  _DelayUS
-                  0x01b59e                  _DelayMS
- .text            0x01b5ba         0x5e build/default/production/_ext/812168374/init_ports.o
-                  0x01b5ba                  _init_ports
- .text            0x01b618         0x54 build/default/production/_ext/812168374/memory_test.o
-                  0x01b618                  _memory_test
- .text            0x01b66c         0x50 build/default/production/_ext/812168374/memory.o
-                  0x01b66c                  _LoadAddr
-                  0x01b672                  _WriteMem
-                  0x01b688                  _WriteLatch
-                  0x01b690                  _ReadLatch
-                  0x01b698                  _JumptoDevice
-                  0x01b69e                  _Erase
- .text            0x01b6bc         0x44 build/default/production/_ext/812168374/PcTest.o
-                  0x01b6bc                  _CPU_PCtest
- .text            0x01b700         0x3e build/default/production/_ext/812168374/init_DMA.o
-                  0x01b700                  _Init_DMA0
+.text             0x01b378        0x3c0
+ .text            0x01b378         0xf4 build/default/production/_ext/812168374/thermist.o
+                  0x01b378                  _thermal_setup
+                  0x01b3d6                  _two_wire_thermal
+                  0x01b3ea                  _thermistor_present
+ .text            0x01b46c         0x76 build/default/production/_ext/812168374/spi_mpol.o
+                  0x01b46c                  _SPIMPolInit
+                  0x01b48e                  _SPIMPolPut
+                  0x01b4b0                  _SPIMPolIsTransmitOver
+ .text            0x01b4e2         0x6e build/default/production/_ext/812168374/init_ADC.o
+                  0x01b4e2                  _Init_ADC
+ .text            0x01b550         0x64 build/default/production/_ext/812168374/delay.o
+                  0x01b550                  _DelayUS
+                  0x01b598                  _DelayMS
+ .text            0x01b5b4         0x5e build/default/production/_ext/812168374/init_ports.o
+                  0x01b5b4                  _init_ports
+ .text            0x01b612         0x54 build/default/production/_ext/812168374/memory_test.o
+                  0x01b612                  _memory_test
+ .text            0x01b666         0x50 build/default/production/_ext/812168374/memory.o
+                  0x01b666                  _LoadAddr
+                  0x01b66c                  _WriteMem
+                  0x01b682                  _WriteLatch
+                  0x01b68a                  _ReadLatch
+                  0x01b692                  _JumptoDevice
+                  0x01b698                  _Erase
+ .text            0x01b6b6         0x44 build/default/production/_ext/812168374/PcTest.o
+                  0x01b6b6                  _CPU_PCtest
+ .text            0x01b6fa         0x3e build/default/production/_ext/812168374/init_DMA.o
+                  0x01b6fa                  _Init_DMA0
 
 .SslTestSection1
-                  0x01b73e          0xa
+                  0x01b738          0xa
  .SslTestSection1
-                  0x01b73e          0xa build/default/production/_ext/812168374/test_function.o
-                  0x01b73e                  _TestFunction1
+                  0x01b738          0xa build/default/production/_ext/812168374/test_function.o
+                  0x01b738                  _TestFunction1
 
 .SslTestSection2
-                  0x01b748          0xa
+                  0x01b742          0xa
  .SslTestSection2
-                  0x01b748          0xa build/default/production/_ext/812168374/test_function.o
-                  0x01b748                  _TestFunction2
+                  0x01b742          0xa build/default/production/_ext/812168374/test_function.o
+                  0x01b742                  _TestFunction2
