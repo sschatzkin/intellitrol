@@ -86,7 +86,7 @@ FIXDEPS=fixDeps
 
 # The following macros may be used in the pre and post step lines
 Device=PIC24HJ256GP210
-ProjectDir="C:\Users\HPhipps\Documents\Intellitrol\Intellitrol 1.38 Compartment Count Test\Main.X"
+ProjectDir="C:\Users\HPhipps\Documents\Intellitrol\1-7-0\Main.X"
 ProjectName=Itrol_Main
 ConfName=default
 ImagePath="dist\default\${IMAGE_TYPE}\Main.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}"
