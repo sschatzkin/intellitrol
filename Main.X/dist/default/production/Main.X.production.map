@@ -194,7 +194,7 @@ section                    address   length (PC units)   length (bytes) (dec)
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
 .bss                         0x800                   0           0x946  (2374)
-_04D732A0_at_address_00003F02    0x3f02                   0             0x2  (2)
+_04ED32A0_at_address_00003F02    0x3f02                   0             0x2  (2)
 .data                       0x3f04                   0            0x52  (82)
 .bss                        0x3f56                   0            0x60  (96)
 .data                       0x3fb6                   0            0x26  (38)
@@ -1579,7 +1579,7 @@ __FSS
 
 __FGS             0xf80004          0x2
  *(__FGS.sec*)
- __FGS.sec        0xf80004          0x2 /CW/_FGShËﬂ†Ëﬂ__FGS.sec
+ __FGS.sec        0xf80004          0x2 /CW/_FGShÈ‹†È‹__FGS.sec
                   0xf80004                  __FGS.sec
 
 __FOSCSEL         0xf80006          0x2
@@ -3087,7 +3087,7 @@ LOAD c:/program files (x86)/microchip/xc16/v1.41/bin/bin/../../lib\libm-elf.a
 LOAD c:/program files (x86)/microchip/xc16/v1.41/bin/bin/../../lib\libc-elf.a
 END GROUP
 OUTPUT(dist/default/production/Main.X.production.elf elf32-pic30)
-LOAD /CW/_FGShËﬂ†Ëﬂ__FGS.sec
+LOAD /CW/_FGShÈ‹†È‹__FGS.sec
 LOAD jump_table
 LOAD default_isr
 LOAD heap
@@ -3361,9 +3361,9 @@ _04CBE4E0_at_address_00003FFE
                     0x3ffe          0x2 build/default/production/_ext/812168374/comdat.o
                     0x3ffe                  _updater_rev
 
-_04D732A0_at_address_00003F02
+_04ED32A0_at_address_00003F02
                     0x3f02          0x2
- _04D732A0_at_address_00003F02
+ _04ED32A0_at_address_00003F02
                     0x3f02          0x2 build/default/production/_ext/812168374/main.o
 
 _045876C05dbb1e4f
