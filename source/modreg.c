@@ -1834,8 +1834,8 @@ MODBSTS mbrWrReg
         }
       break;
               
-      case 0x87:                         /* 84 -- Software Feature Enable Code */
-                                         /* Enable/Disable Unload Terminal  */
+      case 0x87:                         /* 87 -- Software Feature Enable Code */
+                                         /* Enable/Disable Compartment Count  */
         if (*value == 0)                 /* Disable requested */
         {
            SysParm.EnaSftFeatures =
@@ -1878,7 +1878,7 @@ MODBSTS mbrWrReg
         modNVflag++;                    /* Request EEPROM update */
         break;
 
-      case 0x8A:                /* 88 -- default fuel type msb and middle byte */
+      case 0x8A:                /* 8A -- default fuel type msb and middle byte */
         wtmp = *value;                  /* Just hold on to high order half... */
         tmp_byte = (unsigned char)(wtmp >> 8);
         SysParm.default_fuel_type[0] = tmp_byte;
@@ -1887,7 +1887,7 @@ MODBSTS mbrWrReg
         (void)nvSysParmUpdate();
       break;
               
-      case 0x8B:                /* 88 -- default fuel type lsb */
+      case 0x8B:                /* 8B -- default fuel type lsb */
         wtmp = *value;                  /* Just hold on to high order half... */
         tmp_byte = (unsigned char)(wtmp >> 8);
         SysParm.default_fuel_type[2] = tmp_byte;

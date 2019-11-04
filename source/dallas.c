@@ -1510,7 +1510,7 @@ unsigned char temp_byte;
   {
     if(scully_flag == FALSE)
     {
-      printf("\n\r     *** Truck is outfitted with all Scully Eguipment. ***\n\r\n\r");
+      printf("\n\r     *** Truck is outfitted with all Scully Equipment. ***\n\r\n\r");
       scully_flag = TRUE;
     }
   } else
