@@ -153,13 +153,9 @@
 
 #define STSB_BAD_CLOCK      0x0010
 
-/* ??? */
-
 #define STSB_BAD_CPU        0x0020
 
 #define STSB_TRUCK          0x0040
-
-/* Free                     0x0040 */
 
 /* EPROM/FLASH 'Kernel' error (bad Checksum/CRC) */
 
@@ -170,9 +166,11 @@
 #define STSB_ERR_VOLTAGE    0x0100
 
 /* Free                     0x0200 */
+
 #define STSB_ERR_TIMDATA    0x0400
 
 /* Free                     0x0800 */
+
 #define STSB_GRND_FAULT     0x1000
 
 /* Intellitrol in some "special" operation mode, and thus, while running,
@@ -237,20 +235,20 @@
 /* Intellitrol is pulsing 5-Wire-Optic Out (Channel 4) */
 
 #define STSO_5WIRE_PULSE    0x0030
-#define  STSO_5WIRE_PULSE1    0x0010
-#define  STSO_5WIRE_PULSE2    0x0020
+#define STSO_5WIRE_PULSE1   0x0010
+#define STSO_5WIRE_PULSE2   0x0020
 
 /* Intellitrol received 5-Wire-Optic "Echo" (Channel 6) response to pulse */
 
 #define STSO_5WIRE_ECHO     0x00C0
-#define  STSO_5WIRE_ECHO1     0x0040
-#define  STSO_5WIRE_ECHO2     0x0080
+#define STSO_5WIRE_ECHO1    0x0040
+#define STSO_5WIRE_ECHO2    0x0080
 
 /* Intellitrol is communicating with vehicle (TIM, Intellitrol, etc.) */
 
 #define STSO_COMM_VEHICLE   0x0300
-#define  STSO_COMM_VEHICLE1   0x0100
-#define  STSO_COMM_VEHICLE2   0x0200
+#define STSO_COMM_VEHICLE1  0x0100
+#define STSO_COMM_VEHICLE2  0x0200
 
 /* Don't need "TAS" communications ... */
 

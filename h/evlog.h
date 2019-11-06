@@ -217,7 +217,7 @@ typedef struct                      /* Must be 22 bytes */
     unsigned char probe;              /* What kind of probe was wet */
     unsigned char probes_state[16];   /* Report probe state */
     unsigned char Truck[5];           /* Truck Serial Number */
-} EEOVF_INFO;                         /* OVF OVerFill */
+} EEOVF_INFO;                         /* OVF OverFill */
 
 #define EVIMAINTENANCE  0x08
 
