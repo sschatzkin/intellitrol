@@ -3558,7 +3558,7 @@ unsigned char data;                  /* Local data byte */
 
           /************************** 12/30/2008 9:33AM **********************
            * This command will send back the volume of the compartment the
-           * originator reguested.
+           * originator requested.
            *******************************************************************/
           case REPORT_COMPARTMENT_VOLUME: /* 0x50 --  */
             sts = mbcRdTrCompt ();
