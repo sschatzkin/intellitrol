@@ -4,3 +4,5 @@
 1-7-0 Documentation/~$DBUS32.docx
 1-7-0 Documentation/~$177_MODBUS for Intellitrol 2_RevC.docx
 1-7-0 Documentation/~$DBUS31.docx
+*.log
+*.o
