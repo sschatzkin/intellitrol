@@ -197,19 +197,19 @@ section                    address   length (PC units)   length (bytes) (dec)
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
 .bss                         0x800                   0           0x946  (2374)
-_04F182A0_at_address_00003F02    0x3f02                   0             0x2  (2)
+_04D072A0_at_address_00003F02    0x3f02                   0             0x2  (2)
 .data                       0x3f04                   0            0x52  (82)
 .bss                        0x3f56                   0            0x60  (96)
 .data                       0x3fb6                   0            0x26  (38)
 .bss                        0x3fdc                   0            0x12  (18)
 .bss                        0x3fee                   0             0x2  (2)
-_045AE480_at_address_00003FF0    0x3ff0                   0             0x2  (2)
+_0447E480_at_address_00003FF0    0x3ff0                   0             0x2  (2)
 .bss                        0x3ff2                   0             0x6  (6)
-_045AE600_at_address_00003FF8    0x3ff8                   0             0x2  (2)
-_045AE540_at_address_00003FFA    0x3ffa                   0             0x2  (2)
-_045AE5A0_at_address_00003FFC    0x3ffc                   0             0x2  (2)
-_045AE4E0_at_address_00003FFE    0x3ffe                   0             0x2  (2)
-_0456E6C05e42d666           0x4000                   0            0x10  (16)
+_0447E600_at_address_00003FF8    0x3ff8                   0             0x2  (2)
+_0447E540_at_address_00003FFA    0x3ffa                   0             0x2  (2)
+_0447E5A0_at_address_00003FFC    0x3ffc                   0             0x2  (2)
+_0447E4E0_at_address_00003FFE    0x3ffe                   0             0x2  (2)
+_0463E6C05e42fb78           0x4000                   0            0x10  (16)
 .data                       0x4010                   0            0x1e  (30)
 .bss                        0x402e                   0            0x16  (22)
 .bss                        0x4044                   0            0x64  (100)
@@ -1582,7 +1582,7 @@ __FSS
 
 __FGS             0xf80004          0x2
  *(__FGS.sec*)
- __FGS.sec        0xf80004          0x2 /CW/_FGS ‚{Ø‚{__FGS.sec
+ __FGS.sec        0xf80004          0x2 /CW/_FGSˆR€ÀR€__FGS.sec
                   0xf80004                  __FGS.sec
 
 __FOSCSEL         0xf80006          0x2
@@ -3090,7 +3090,7 @@ LOAD c:/program files (x86)/microchip/xc16/v1.41/bin/bin/../../lib\libm-elf.a
 LOAD c:/program files (x86)/microchip/xc16/v1.41/bin/bin/../../lib\libc-elf.a
 END GROUP
 OUTPUT(dist/default/production/Main.X.production.elf elf32-pic30)
-LOAD /CW/_FGS ‚{Ø‚{__FGS.sec
+LOAD /CW/_FGSˆR€ÀR€__FGS.sec
 LOAD jump_table
 LOAD default_isr
 LOAD heap
@@ -3334,44 +3334,44 @@ __c30_signature
  __c30_signature
                   0x00268e          0x6 c:/program files (x86)/microchip/xc16/v1.41/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
 
-_045AE480_at_address_00003FF0
+_0447E480_at_address_00003FF0
                     0x3ff0          0x2
- _045AE480_at_address_00003FF0
+ _0447E480_at_address_00003FF0
                     0x3ff0          0x2 build/default/production/_ext/812168374/comdat.o
                     0x3ff0                  _error_flag
 
-_045AE600_at_address_00003FF8
+_0447E600_at_address_00003FF8
                     0x3ff8          0x2
- _045AE600_at_address_00003FF8
+ _0447E600_at_address_00003FF8
                     0x3ff8          0x2 build/default/production/_ext/812168374/comdat.o
                     0x3ff8                  _error_address
 
-_045AE540_at_address_00003FFA
+_0447E540_at_address_00003FFA
                     0x3ffa          0x2
- _045AE540_at_address_00003FFA
+ _0447E540_at_address_00003FFA
                     0x3ffa          0x2 build/default/production/_ext/812168374/comdat.o
                     0x3ffa                  _error_good_data
 
-_045AE5A0_at_address_00003FFC
+_0447E5A0_at_address_00003FFC
                     0x3ffc          0x2
- _045AE5A0_at_address_00003FFC
+ _0447E5A0_at_address_00003FFC
                     0x3ffc          0x2 build/default/production/_ext/812168374/comdat.o
                     0x3ffc                  _error_bad_data
 
-_045AE4E0_at_address_00003FFE
+_0447E4E0_at_address_00003FFE
                     0x3ffe          0x2
- _045AE4E0_at_address_00003FFE
+ _0447E4E0_at_address_00003FFE
                     0x3ffe          0x2 build/default/production/_ext/812168374/comdat.o
                     0x3ffe                  _updater_rev
 
-_04F182A0_at_address_00003F02
+_04D072A0_at_address_00003F02
                     0x3f02          0x2
- _04F182A0_at_address_00003F02
+ _04D072A0_at_address_00003F02
                     0x3f02          0x2 build/default/production/_ext/812168374/main.o
 
-_0456E6C05e42d666
+_0463E6C05e42fb78
                     0x4000         0x10
- _0456E6C05e42d666
+ _0463E6C05e42fb78
                     0x4000         0x10 build/default/production/_ext/812168374/init_DMA.o
                     0x4000                  _BufferA
 
